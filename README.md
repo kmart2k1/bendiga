@@ -1,2 +1,0 @@
-# bendiga
-jakes website

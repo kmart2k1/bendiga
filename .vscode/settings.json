@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/4a8b8b4a-18ad-452b-bdfc-8f8b2aa4b1a1/microsoft.web/sites/subscriptions/4a8b8b4a-18ad-452b-bdfc-8f8b2aa4b1a1/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/bendiga",
+    "appService.deploySubpath": "."
+}
