@@ -9,7 +9,6 @@ import {createUseStyles, useTheme} from 'react-jss'
 
 const useStyles = createUseStyles((theme) =>({
   container: {
-    padding: '16px'
   }
 }))
 
