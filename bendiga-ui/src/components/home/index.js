@@ -6,7 +6,7 @@ const useStyles = createUseStyles((theme) =>({
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '100%',
+        margin: '0 -16px',
         backgroundImage: `url(${coverImage})`,
         backgroundSize: 'cover',
         minHeight:'400px',

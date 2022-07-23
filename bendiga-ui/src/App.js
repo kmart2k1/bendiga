@@ -9,6 +9,8 @@ import {createUseStyles, useTheme} from 'react-jss'
 
 const useStyles = createUseStyles((theme) =>({
   container: {
+    margin: '0 16px',
+    fontFamily: 'Montserrat, sans-serif'
   }
 }))
 
