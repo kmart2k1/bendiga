@@ -2,10 +2,19 @@ import React from 'react'
 import {createUseStyles, useTheme} from 'react-jss'
 import Grid from '@mui/material/Grid'
 import jakeImg from '../../assets/me.png'
+import beeArt from '../../assets/bee-art.png'
+import classNames from 'classnames'
 const useStyles = createUseStyles((theme) =>({
     container: {
         textAlign:'left',
-        
+        fontFamily: 'Montserrat, sans-serif'
+    },
+    topPart: {
+        backgroundImage: `url(${beeArt})`,
+        backgroundSize: '70%',
+        backgroundRepeat: 'no-repeat',
+        height: '300px',
+        backgroundPositionX: 'center'
     },
     link: {
         marginRight: '24px'
@@ -31,7 +40,11 @@ const useStyles = createUseStyles((theme) =>({
 const AboutPage = () => {
     const classes = useStyles()
     return (
-        <Grid container className={classes.container}>
+        <>
+        <Grid container className={classes.topPart}>
+
+        </Grid>
+        <Grid container className={classNames(classes.container)}>
             <Grid item xs={12} className={classes.subheader}>
                 Bendiga
             </Grid>
@@ -49,7 +62,8 @@ const AboutPage = () => {
             Spaces that we can call Home.
             </p>        
             </Grid>
-
+        </Grid>
+        <Grid container className={classNames(classes.container)}>
             <Grid item xs={12} className={classes.subheader} style={{marginTop:'20px'}}>
                 Jake Mar
             </Grid>
@@ -88,7 +102,7 @@ Jesus Christ
             </p>
             </Grid>
         </Grid>
-
+        </>
     )
 }
 

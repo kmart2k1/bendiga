@@ -9,10 +9,11 @@ import { textAlign } from '@mui/system'
 import logo from '../../assets/big-logo.png'
 const useStyles = createUseStyles({
     container: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        width: '100%'
+       position:'absolute',
+       top: '0',
+       left: '0',
+        width: '100%',
+        textAlign: 'left'
     },
     link: {
         marginRight: '24px',
@@ -30,7 +31,7 @@ const useStyles = createUseStyles({
 
     },
     titleContainer: {
-        display: 'flex',
+        display: 'none',
         alignItems: 'center'
     },
     title: {
@@ -64,6 +65,7 @@ export const Header = () => {
                     Good Steward Landscape Architecture
                
                 <div>
+                    <Link className={classes.link} to='/'>home</Link>
                     <Link className={classes.link} to='/about'>about</Link>
                     <Link className={classes.link} to='/process'>process</Link>
                     <Link className={classes.link} to='/work'>work</Link>
@@ -85,6 +87,7 @@ export const Header = () => {
         
             <Drawer  open={open} onClose={()=>setOpen(false)} >
                 <div className={classes.nav}>
+                <Link className={classes.link} to='/'>home</Link>
                     <Link className={classes.link} to='/about'>about</Link>
                     <Link className={classes.link} to='/process'>process</Link>
                     <Link className={classes.link} to='/work'>work</Link>
