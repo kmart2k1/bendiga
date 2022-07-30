@@ -4,8 +4,6 @@ import Grid from '@mui/material/Grid'
 import jakeImg from '../../assets/me.png'
 import beeArt from '../../assets/bee-art.png'
 import classNames from 'classnames'
-import flowers from '../../assets/lots-flowers.png'
-
 const useStyles = createUseStyles((theme) =>({
     container: {
         textAlign:'left',
@@ -36,20 +34,10 @@ const useStyles = createUseStyles((theme) =>({
     },
     jakeText: {
         padding: '8px'
-    },
-    flowerText: {
-        
-    },
-    flowerImage: {
-        float: 'right',
-        margin: '0 -16px 0 0',
-        height: 'auto',
-        maxWidth: '150px',
-        shapeOutside: `url(${flowers})`
     }
 }))
 
-const AboutPage = () => {
+const ProcessPage = () => {
     const classes = useStyles()
     return (
         <>
@@ -91,11 +79,9 @@ even pulling weeds, always seemed to give
 Jake a certain calmness.
             </Grid>
             <Grid item xs={12}>
-        <div>
-
-      
-        <img className={classes.flowerImage} src={flowers}/>
-        <div className={classes.flowerText}>
+            <p>
+            
+            </p>
             <p>
             Since then, Jake has graduated with a landscape
 architecture degree from Cal Poly, SLO, got his
@@ -105,21 +91,19 @@ projects at design firms around the bay for the past
 as a fine gardener, learning valuable skills from
 properly swinging a pick to creating habitat for the
 Monarch butterfly.
-</p>
-   <p>
+
+            </p>
+            <p>
             Jake is grateful for these experiences
 and all the people he crossed paths
 with. They showed him the beauty of
 God's creation and the peace of knowing
 Jesus Christ
-</p>
-</div>
-        </div>
-           
+            </p>
             </Grid>
         </Grid>
         </>
     )
 }
 
-export default AboutPage
+export default ProcessPage

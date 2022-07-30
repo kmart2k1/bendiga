@@ -6,10 +6,9 @@ import {createUseStyles} from 'react-jss'
 const useStyles = createUseStyles({
     container: {
         borderTop:'solid 1px #e0e0e0',
-        padding: '0 16px',
+        padding: '4px 16px',
         fontSize:'12px',
         fontStyle:'italic',
-        position:'fixed',
         bottom: '0'
     },
     link: {
