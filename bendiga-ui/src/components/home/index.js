@@ -1,26 +1,30 @@
 import React from 'react'
 import {createUseStyles, useTheme} from 'react-jss'
-import coverImage from '../../assets/home/butterfly.jpg'
-import logo from '../../assets/home/logo.jpg'
+import coverImage from '../../assets/home/home.png'
+import logo from '../../assets/home/logoSmall.png'
 import Grid from '@mui/material/Grid'
 const useStyles = createUseStyles((theme) =>({
     container: {
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-end',
         alignItems: 'center',
         margin: '61px -16px 0 -16px',
         backgroundImage: `url(${coverImage})`,
         backgroundSize: 'cover',
         minHeight:'100vh',
         position:'relative',
-        flexDirection: 'column'
+        flexDirection: 'column',
     },
     textBlock: {
         position:'relative',
         marginTop: '64px',
         color: 'white',
         width: '100%',
-        fontStyle: 'italic'
+        fontSize: '24px',
+        fontStyle: 'italic',
+        lineHeight:'1.5em',
+        fontWeight:'bold',        
+        bottom: '160px'
     },
     nav: {
         width: '200px',
@@ -64,11 +68,8 @@ const HomePage = () => {
             
             <div className={classes.container} >
             <div className={classes.textBlock}>
-                I started as a tiny egg, upon a leaf of green<br/>
-                And now I stay upon the leaf, so I will not be seen<br/>
-                Soon I'll build a chrysalis, upon a limb up high<br/>
-                I'll stay awhile and then come out<br/>
-                And be a butterfly
+             I started as a tiny egg,<br/>
+             upon a leaf of green
                 
             </div>
         </div>
