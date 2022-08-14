@@ -48,6 +48,16 @@ const useStyles = createUseStyles((theme) =>({
         textAlign: 'left',
         fontSize:'12px',
         color:'olive',
+    },
+    authorText: {
+        fontSize:'12px',
+        color:'white',
+        width: '100vw',
+        position: 'relative',
+        bottom: '10px',
+        left: '10px',
+        textAlign:'left',
+        fontStyle: 'italic',
     }
 }))
 
@@ -71,6 +81,10 @@ const HomePage = () => {
              I started as a tiny egg,<br/>
              upon a leaf of green
                 
+            </div>
+            <div className={classes.authorText}>
+                photograph<br/>
+                by Aaron Burdon
             </div>
         </div>
         </>
