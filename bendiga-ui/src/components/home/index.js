@@ -69,7 +69,7 @@ const HomePage = () => {
             <Grid item>
                 <img src={logo} height={62}></img>  
             </Grid>
-            <Grid item >
+            <Grid item style={{marginLeft:'-10px'}}>
                 <div className={classes.bendigaTitle}>Bendiga</div>
                 <div className={classes.restTitle}>good steward </div>
                 <div className={classes.restTitle}>landscape architecture</div>
