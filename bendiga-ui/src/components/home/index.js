@@ -20,11 +20,11 @@ const useStyles = createUseStyles((theme) =>({
         marginTop: '64px',
         color: 'white',
         width: '100%',
-        fontSize: '24px',
+        fontSize: '22px',
         fontStyle: 'italic',
         lineHeight:'1.5em',
         fontWeight:'bold',        
-        bottom: '160px'
+        bottom: '120px'
     },
     nav: {
         width: '200px',
@@ -79,7 +79,7 @@ const HomePage = () => {
             <div className={classes.container} >
             <div className={classes.textBlock}>
              I started as a tiny egg,<br/>
-             upon a leaf of green
+             upon a leaf of green ...
                 
             </div>
             <div className={classes.authorText}>
