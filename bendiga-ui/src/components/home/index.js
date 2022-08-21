@@ -1,7 +1,7 @@
 import React from 'react'
 import {createUseStyles, useTheme} from 'react-jss'
 import coverImage from '../../assets/home/1poem.png'
-import logo from '../../assets/home/logoSmall.png'
+import logo from '../../assets/home/logoBig.png'
 import Grid from '@mui/material/Grid'
 const useStyles = createUseStyles((theme) =>({
     container: {
