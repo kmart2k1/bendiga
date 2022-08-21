@@ -1,6 +1,6 @@
 import React from 'react'
 import {createUseStyles, useTheme} from 'react-jss'
-import coverImage from '../../assets/home/home.png'
+import coverImage from '../../assets/home/1poem.png'
 import logo from '../../assets/home/logoSmall.png'
 import Grid from '@mui/material/Grid'
 const useStyles = createUseStyles((theme) =>({
@@ -11,11 +11,13 @@ const useStyles = createUseStyles((theme) =>({
         margin: '61px -16px 0 -16px',
         backgroundImage: `url(${coverImage})`,
         backgroundSize: 'cover',
-        minHeight:'100vh',
+        backgroundRepeat: 'no-repeat',
+        minHeight:'calc(100vh + 66px)',
         position:'relative',
         flexDirection: 'column',
     },
     textBlock: {
+        display: 'none',
         position:'relative',
         marginTop: '64px',
         color: 'white',
@@ -50,6 +52,7 @@ const useStyles = createUseStyles((theme) =>({
         color:'olive',
     },
     authorText: {
+        display: 'none',
         fontSize:'12px',
         color:'white',
         width: '100vw',
