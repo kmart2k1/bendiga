@@ -42,13 +42,15 @@ const useStyles = createUseStyles((theme) =>({
         left: '0px'
     },
     bendigaTitle: {
+        fontWeight: '600',
+        letterSpacing: '.25em',
         textAlign: 'left',
-        fontSize:'14px',
+        fontSize:'12px',
         color:'olive',
     },
     restTitle: {
         textAlign: 'left',
-        fontSize:'12px',
+        fontSize:'10px',
         color:'olive',
     },
     authorText: {
@@ -72,8 +74,8 @@ const HomePage = () => {
             <Grid item>
                 <img src={logo} height={62}></img>  
             </Grid>
-            <Grid item style={{marginLeft:'-10px'}}>
-                <div className={classes.bendigaTitle}>Bendiga</div>
+            <Grid item style={{marginLeft:'-16px', marginTop: '4px'}}>
+                <div className={classes.bendigaTitle}>bendiga</div>
                 <div className={classes.restTitle}>good steward </div>
                 <div className={classes.restTitle}>landscape architecture</div>
             </Grid>
