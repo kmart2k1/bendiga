@@ -6,7 +6,7 @@ import Footer from './components/footer'
 import HomePage from './components/home'
 import AboutPage from './components/about'
 import {createUseStyles, useTheme} from 'react-jss'
-
+import mobile from 'is-mobile'
 const useStyles = createUseStyles((theme) =>({
   container: {
     margin: '0 16px',
@@ -20,7 +20,7 @@ function App() {
     <div className="App">
      
       <Header/>
-      <div className={classes.container}>
+      <div className={classes.container} style={{margin: mobile() ? '0 16px': '0'}}>
         <Routes>
           <Route path="/" element={<HomePage/>}></Route>
           <Route path="about" element={<AboutPage/>}></Route>

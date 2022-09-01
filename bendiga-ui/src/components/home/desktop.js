@@ -1,22 +1,22 @@
 import React from 'react'
 import {createUseStyles, useTheme} from 'react-jss'
-import coverImage from '../../assets/home/mobile/butterfly.png'
-import logo from '../../assets/home/mobile/logoBig.png'
+import coverImage from '../../assets/home/desktop/butterfly.png'
+import logo from '../../assets/home/desktop/logo.png'
 import Grid from '@mui/material/Grid'
+import {Link} from 'react-router-dom'
 import mobile from 'is-mobile'
 const useStyles = createUseStyles((theme) =>({
     container: {
         display: 'flex',
         justifyContent: 'flex-end',
         alignItems: 'center',
-        margin: '61px -16px 0 -16px',
         backgroundImage: `url(${coverImage})`,
-        backgroundSize: 'cover',
+        backgroundSize: 'fill',
         backgroundRepeat: 'no-repeat',
-        backgroundPositionX: '-50px',
         minHeight:'calc(100vh + 66px)',
         position:'relative',
         flexDirection: 'column',
+        zIndex: '-1',
     },
     textBlock: {
         display: 'none',
@@ -31,9 +31,7 @@ const useStyles = createUseStyles((theme) =>({
         bottom: '120px'
     },
     nav: {
-        width: '200px',
-        display: 'flex',
-        flexDirection: 'column'
+        height:'60px'
     },
     logoContainer: {
         flexDirection: 'row-reverse',
@@ -65,15 +63,40 @@ const useStyles = createUseStyles((theme) =>({
         left: '10px',
         textAlign:'left',
         fontStyle: 'italic',
+    },
+    logo: {
+        width: '75px',
+        position: 'absolute',
+        top: '0px',
+        left: '150px',
+        zIndex: '10'
     }
 }))
 
-const HomePageMobile = () => {
+const HomePageDesktop = () => {
     const classes = useStyles()
     
     return (
         <>
-        
+         <Grid container className={classes.nav}>
+            <Grid item xs={3}>
+                <img src={logo} className={classes.logo} />
+            </Grid>
+            <Grid item xs={9}>
+                <Grid container>
+                    <Grid item xs={12}><span className={classes.title}>Good Steward Landscape Architecture</span></Grid>
+                    <Grid item xs={12}>
+                        <Grid container justifyContent='space-between'>
+                            <Grid item><Link className={classes.link} to='/about'>about</Link></Grid>
+                            <Grid item><Link className={classes.link} to='/process'>process</Link></Grid>
+                            <Grid item><Link className={classes.link} to='/work'>work</Link></Grid>
+                            <Grid item><Link className={classes.link} to='/reading'>reading</Link></Grid>
+                            <Grid item><Link className={classes.link} to='/home'>contact</Link></Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
             
             <div className={classes.container} >
             <div className={classes.textBlock}>
@@ -91,4 +114,4 @@ const HomePageMobile = () => {
     )
 }
 
-export default HomePageMobile
+export default HomePageDesktop
