@@ -70,7 +70,87 @@ const useStyles = createUseStyles((theme) =>({
         top: '0px',
         left: '150px',
         zIndex: '10'
+    },
+    menuContainer: {
+        position: 'absolute',
+        left: '250px',
+        top: '30px',
+        display: 'flex',
+        flexWrap: 'wrap',
+        width: '60%'
+    },
+    linkContainer: {
+        width:'150px',
+        borderRight: 'solid 1px orange',
+        flexWrap: 'nowrap'
+    },
+    link: {
+        fontSize:'24px',
+        color: 'white',
+        textDecoration: 'none',
+        
+    },
+    titleContainer: {
+        width: '100%',
+        textAlign: 'left',
+        paddingLeft: '38px'
+    },
+    titleText: {
+        fontSize: '24px',
+        letterSpacing: '.18em',
+        color: '#c2ca86'
+    },
+    '@media (max-width: 1400px)': {
+        menuContainer: {
+            left: '250px',
+            top: '36px',
+        },
+        titleContainer: {
+            width: '100%',
+            textAlign: 'left',
+            paddingLeft: '32px'
+        },
+        titleText: {
+            fontSize: '20px',
+            letterSpacing: '.18em',
+            color: '#c2ca86'
+        },
+        linkContainer: {
+            width:'125px',
+            borderRight: 'solid 1px orange',
+            flexWrap: 'nowrap'
+        },
+        link: {
+            fontSize:'20px',
+            
+        },
+    },
+    '@media (max-width: 1100px)': {
+        menuContainer: {
+            left: '250px',
+            top: '42px',
+        },
+        titleContainer: {
+            width: '100%',
+            textAlign: 'left',
+            paddingLeft: '26px'
+        },
+        titleText: {
+            fontSize: '16px',
+            letterSpacing: '.18em',
+            color: '#c2ca86'
+        },
+        linkContainer: {
+            width:'100px',
+            borderRight: 'solid 1px orange',
+            flexWrap: 'nowrap'
+        },
+        link: {
+            fontSize:'16px',
+            
+        },
     }
+
 }))
 
 const HomePageDesktop = () => {
@@ -78,25 +158,32 @@ const HomePageDesktop = () => {
     
     return (
         <>
-         <Grid container className={classes.nav}>
-            <Grid item xs={3}>
+            <div className={classes.nav}>
+                <div>
                 <img src={logo} className={classes.logo} />
-            </Grid>
-            <Grid item xs={9}>
-                <Grid container>
-                    <Grid item xs={12}><span className={classes.title}>Good Steward Landscape Architecture</span></Grid>
-                    <Grid item xs={12}>
-                        <Grid container justifyContent='space-between'>
-                            <Grid item><Link className={classes.link} to='/about'>about</Link></Grid>
-                            <Grid item><Link className={classes.link} to='/process'>process</Link></Grid>
-                            <Grid item><Link className={classes.link} to='/work'>work</Link></Grid>
-                            <Grid item><Link className={classes.link} to='/reading'>reading</Link></Grid>
-                            <Grid item><Link className={classes.link} to='/home'>contact</Link></Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </Grid>
-        </Grid>
+                </div>
+                <div className={classes.menuContainer}>
+                    <div className={classes.titleContainer}>
+                        <span className={classes.titleText}>GOOD STEWARD LANDSCAPE ARCHITECTURE</span>
+                    </div>
+                    <div className={classes.linkContainer}>
+                        <Link className={classes.link} to='/about'>about</Link>
+                    </div>
+                    <div className={classes.linkContainer}>
+                        <Link className={classes.link} to='/process'>process</Link>
+                    </div>
+                    <div className={classes.linkContainer}>
+                    <Link className={classes.link} to='/work'>work</Link>
+                    </div>
+                    <div className={classes.linkContainer}>
+                        <Link className={classes.link} to='/reading'>reading</Link>
+                    </div>
+                    <div className={classes.linkContainer}>
+                        <Link className={classes.link} to='/home'>contact</Link>
+                    </div>
+                </div>
+            </div>
+        
             
             <div className={classes.container} >
             <div className={classes.textBlock}>
