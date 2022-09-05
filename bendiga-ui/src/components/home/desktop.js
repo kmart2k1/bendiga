@@ -11,9 +11,9 @@ const useStyles = createUseStyles((theme) =>({
         justifyContent: 'flex-end',
         alignItems: 'center',
         backgroundImage: `url(${coverImage})`,
-        backgroundSize: 'fill',
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        minHeight:'calc(100vh + 66px)',
+        minHeight:'calc(100vh + 260px)',
         position:'relative',
         flexDirection: 'column',
         zIndex: '-1',
@@ -68,12 +68,12 @@ const useStyles = createUseStyles((theme) =>({
         width: '75px',
         position: 'absolute',
         top: '0px',
-        left: '150px',
+        left: '30px',
         zIndex: '10'
     },
     menuContainer: {
         position: 'absolute',
-        left: '250px',
+        left: '100px',
         top: '30px',
         display: 'flex',
         flexWrap: 'wrap',
@@ -102,7 +102,7 @@ const useStyles = createUseStyles((theme) =>({
     },
     '@media (max-width: 1400px)': {
         menuContainer: {
-            left: '250px',
+            left: '100px',
             top: '36px',
         },
         titleContainer: {
@@ -127,7 +127,7 @@ const useStyles = createUseStyles((theme) =>({
     },
     '@media (max-width: 1100px)': {
         menuContainer: {
-            left: '250px',
+            left: '100px',
             top: '42px',
         },
         titleContainer: {
