@@ -1,6 +1,6 @@
 import React from 'react'
 import {createUseStyles, useTheme} from 'react-jss'
-import coverImage from '../../assets/home/desktop/butterfly.png'
+import coverImage from '../../assets/home/desktop/butterfly2.png'
 import logo from '../../assets/home/desktop/logo.png'
 import Grid from '@mui/material/Grid'
 import {Link} from 'react-router-dom'
@@ -9,29 +9,26 @@ const useStyles = createUseStyles((theme) =>({
     container: {
         display: 'flex',
         justifyContent: 'flex-end',
-        alignItems: 'center',
         backgroundImage: `url(${coverImage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        minHeight:'calc(100vh + 260px)',
+        minHeight:'calc(100vh - 60px)',
         position:'relative',
-        flexDirection: 'column',
         zIndex: '-1',
     },
     textBlock: {
-        display: 'none',
-        position:'relative',
-        marginTop: '64px',
+        display: 'block',
+        position:'absolute',
+        bottom: '200px',
+        left: '200px',
         color: 'white',
-        width: '100%',
-        fontSize: '22px',
+        fontSize: '36px',
         fontStyle: 'italic',
-        lineHeight:'1.5em',
-        fontWeight:'bold',        
+        lineHeight:'1.5em',    
         bottom: '120px'
     },
     nav: {
-        height:'60px'
+        height:'80px'
     },
     logoContainer: {
         flexDirection: 'row-reverse',
@@ -65,7 +62,7 @@ const useStyles = createUseStyles((theme) =>({
         fontStyle: 'italic',
     },
     logo: {
-        width: '75px',
+        width: '120px',
         position: 'absolute',
         top: '0px',
         left: '30px',
@@ -73,16 +70,19 @@ const useStyles = createUseStyles((theme) =>({
     },
     menuContainer: {
         position: 'absolute',
-        left: '100px',
-        top: '30px',
+        left: '130px',
+        top: '40px',
         display: 'flex',
         flexWrap: 'wrap',
-        width: '60%'
+        width: '70%'
     },
     linkContainer: {
         width:'150px',
         borderRight: 'solid 1px orange',
-        flexWrap: 'nowrap'
+        flexWrap: 'nowrap',
+        '&:last-child': {
+            borderRight: 'none'
+        }
     },
     link: {
         fontSize:'24px',
@@ -93,6 +93,7 @@ const useStyles = createUseStyles((theme) =>({
     titleContainer: {
         width: '100%',
         textAlign: 'left',
+        paddingBottom: '20px',
         paddingLeft: '38px'
     },
     titleText: {
@@ -101,9 +102,20 @@ const useStyles = createUseStyles((theme) =>({
         color: '#c2ca86'
     },
     '@media (max-width: 1400px)': {
+        textBlock: {
+            display: 'block',
+            position:'absolute',
+            bottom: '150px',
+            left: '150px',
+            color: 'white',
+            fontSize: '30px',
+            fontStyle: 'italic',
+            lineHeight:'1.5em',    
+            bottom: '120px'
+        },
         menuContainer: {
-            left: '100px',
-            top: '36px',
+            left: '130px',
+            top: '44px',
         },
         titleContainer: {
             width: '100%',
@@ -113,7 +125,8 @@ const useStyles = createUseStyles((theme) =>({
         titleText: {
             fontSize: '20px',
             letterSpacing: '.18em',
-            color: '#c2ca86'
+            color: '#c2ca86',
+            whiteSpace: 'nowrap'
         },
         linkContainer: {
             width:'125px',
@@ -127,12 +140,13 @@ const useStyles = createUseStyles((theme) =>({
     },
     '@media (max-width: 1100px)': {
         menuContainer: {
-            left: '100px',
-            top: '42px',
+            left: '130px',
+            top: '54px',
         },
         titleContainer: {
             width: '100%',
             textAlign: 'left',
+            paddingBottom: '14px',
             paddingLeft: '26px'
         },
         titleText: {
@@ -189,11 +203,6 @@ const HomePageDesktop = () => {
             <div className={classes.textBlock}>
              I started as a tiny egg,<br/>
              upon a leaf of green ...
-                
-            </div>
-            <div className={classes.authorText}>
-                photograph<br/>
-                by Aaron Burdon
             </div>
         </div>
         </>
