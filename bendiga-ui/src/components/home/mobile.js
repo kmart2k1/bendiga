@@ -13,7 +13,7 @@ const useStyles = createUseStyles((theme) =>({
         backgroundImage: `url(${coverImage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundPositionX: '-50px',
+        backgroundPosition: '50% 90%',
         minHeight:'calc(100vh + 66px)',
         position:'relative',
         flexDirection: 'column',

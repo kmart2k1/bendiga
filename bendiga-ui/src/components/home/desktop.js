@@ -164,8 +164,13 @@ const useStyles = createUseStyles((theme) =>({
             fontSize:'16px',
             
         },
+    },
+    '@media (max-width: 900px)': {
+        textBlock: {
+            display: 'none'
+        }
+        
     }
-
 }))
 
 const HomePageDesktop = () => {
