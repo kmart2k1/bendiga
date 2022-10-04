@@ -4,7 +4,8 @@ import Grid from '@mui/material/Grid'
 import jakeImg from '../../assets/me.png'
 import beeArt from '../../assets/bee-art.png'
 import classNames from 'classnames'
-import flowers from '../../assets/lots-flowers.png'
+import sideart from '../../assets/about/sideart.png'
+import topart from '../../assets/about/topart.png'
 import logo from '../../assets/about/logo.png'
 const useStyles = createUseStyles((theme) => ({
   container: {
@@ -29,21 +30,26 @@ const useStyles = createUseStyles((theme) => ({
   subheader: {
     borderBottom: 'solid 1px black',
     fontSize: '18px',
+    fontWeight: 'bold',
+    fontStyle: 'italic',
   },
   jake: {
-    width: '100%',
     padding: '8px 8px 0 0',
+    width: '400px',
+    height: '500px',
   },
   jakeText: {
     padding: '8px',
   },
   flowerText: {},
   flowerImage: {
-    float: 'right',
+    transform: 'translateX(74px)',
     margin: '0 -16px 0 0',
     height: 'auto',
-    maxWidth: '150px',
-    shapeOutside: `url(${flowers})`,
+    width: '150px',
+    maxWidth: '250px',
+    float: 'right',
+    shapeOutside: `url(${sideart})`,
   },
   navContainer: {
     display: 'flex',
@@ -59,13 +65,24 @@ const useStyles = createUseStyles((theme) => ({
     margin: '0 20px',
   },
   paper: {
-    margin: '0 15%',
+    maxWidth: '900px',
+    padding: '0px 96px 48px 96px',
+    margin: '0 auto',
     backgroundColor: 'white',
     textAlign: 'left',
+    minHeight: 'calc(100vh - 60px + 200px)',
   },
   logo: {
     position: 'absolute',
     height: '50px',
+  },
+  topPlant: {
+    width: '400px',
+    margin: '0 auto',
+  },
+  topArtContainer: {
+    display: 'flex',
+    justifyContent: 'center',
   },
 }))
 
@@ -74,24 +91,26 @@ const AboutPage = () => {
 
   return (
     <>
+      <div className={classes.logo}>
+        <img src={logo} style={{ height: '60px' }} />
+      </div>
+      <div className={classes.navContainer}>
+        <div className={classes.navItem} style={{ marginLeft: '80px' }}>
+          home
+        </div>
+        <div className={classes.navItem}>about </div>
+        <div className={classes.navItem}>process</div>
+        <div className={classes.navItem}>work</div>
+        <div className={classes.navItem}>contact</div>
+      </div>
       <div className={classes.container}>
         <div className={classes.paper}>
-          <div className={classes.logo}>
-            <img src={logo} style={{ height: '60px' }} />
+          <div className={classes.topArtContainer}>
+            <img src={topart} className={classes.topPlant} />
           </div>
-          <div className={classes.navContainer}>
-            <div className={classes.navItem} style={{ marginLeft: '80px' }}>
-              home
-            </div>
-            <div className={classes.navItem}>about </div>
-            <div className={classes.navItem}>process</div>
-            <div className={classes.navItem}>work</div>
-            <div className={classes.navItem}>contact</div>
-          </div>
-
           <Grid container>
             <Grid item xs={12} className={classes.subheader}>
-              Bendiga
+              bendiga
             </Grid>
             <Grid item xs={12}>
               <p>
@@ -121,20 +140,19 @@ const AboutPage = () => {
               className={classes.subheader}
               style={{ marginTop: '20px' }}
             >
-              Jake Mar
+              jacob mar
             </Grid>
-            <Grid item xs={6}>
-              <img src={jakeImg} className={classes.jake} />
-            </Grid>
-            <Grid item xs={6} className={classes.jakeText}>
-              A career in landscaping began on a cul-de-sac in Almaden Valley.
-              Jake's parents and neighbors gave him summer jobs taking care of
-              their gardens. Plants, even pulling weeds, always seemed to give
-              Jake a certain calmness.
-            </Grid>
-            <Grid item xs={12}>
-              <div>
-                <div className={classes.flowerText}>
+            <Grid item>
+              <div style={{ display: 'flex' }}>
+                <img src={jakeImg} className={classes.jake} />
+                <div style={{ paddingLeft: '24px' }}>
+                  <p>
+                    A career in landscaping began on a cul-de-sac in Almaden
+                    Valley. Jake's parents and neighbors gave him summer jobs
+                    taking care of their gardens. Plants, even pulling weeds,
+                    always seemed to give Jake a certain calmness.
+                  </p>
+
                   <p>
                     Since then, Jake has graduated with a landscape architecture
                     degree from Cal Poly, SLO, got his license, and worked on
@@ -144,6 +162,7 @@ const AboutPage = () => {
                     skills from properly swinging a pick to creating habitat for
                     the Monarch butterfly.
                   </p>
+                  <img className={classes.flowerImage} src={sideart} />
                   <p>
                     Jake is grateful for these experiences and all the people he
                     crossed paths with. They showed him the beauty of God's
