@@ -8,6 +8,8 @@ import sideart from '../../assets/about/sideart.png'
 import topart from '../../assets/about/topart.png'
 import logo from '../../assets/about/logo.png'
 import butterfly from '../../assets/about/butterfly.png'
+import SecondaryHeader from '../header/secondaryHeader'
+
 const useStyles = createUseStyles((theme) => ({
   container: {
     backgroundColor: 'rgba(194,202,134,.2)',
@@ -98,23 +100,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <div className={classes.logo}>
-        <img src={logo} style={{ height: '80px' }} />
-      </div>
-      <div className={classes.navContainer}>
-        <div className={classes.navItem} style={{ marginLeft: '100px' }}>
-          home
-        </div>
-        <div className={classes.navItem}>about </div>
-        <div className={classes.navItem}>process</div>
-        <div className={classes.navItem}>work</div>
-        <div className={classes.navItem}>contact</div>
-      </div>
-      <div className={classes.butterfly}>
-        <a href="reading">
-          <img src={butterfly} style={{ height: '40px' }} />
-        </a>
-      </div>
+      <SecondaryHeader />
       <div className={classes.container}>
         <div className={classes.paper}>
           <Grid container>
