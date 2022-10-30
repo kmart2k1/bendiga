@@ -9,10 +9,12 @@ import topart from '../../assets/about/topart.png'
 import logo from '../../assets/about/logo.png'
 import butterfly from '../../assets/about/butterfly.png'
 import SecondaryHeader from '../header/secondaryHeader'
+import { DoubleP } from '../common/textComponents'
 
 const useStyles = createUseStyles((theme) => ({
   container: {
     backgroundColor: 'rgba(194,202,134,.2)',
+    padding: '0 10%',
     fontFamily: 'Montserrat, sans-serif',
     color: '#666666',
   },
@@ -69,9 +71,8 @@ const useStyles = createUseStyles((theme) => ({
     margin: '0 20px',
   },
   paper: {
-    maxWidth: '1200px',
-    padding: '0px 48px 48px 48px',
     margin: '0 auto',
+    padding: '0 0 0 100px',
     backgroundColor: 'white',
     textAlign: 'left',
     minHeight: 'calc(100vh - 60px + 200px)',
@@ -80,14 +81,9 @@ const useStyles = createUseStyles((theme) => ({
     position: 'absolute',
     height: '50px',
   },
-  butterfly: {
-    position: 'absolute',
-    top: '20px',
-    right: '20px',
-  },
   topPlant: {
+    textAlign: 'right',
     width: '400px',
-    margin: '0 auto',
   },
   topArtContainer: {
     display: 'flex',
@@ -115,24 +111,24 @@ const AboutPage = () => {
                   bendiga
                 </Grid>
                 <Grid item xs={12}>
-                  <p>
+                  <DoubleP>
                     Bendiga provides landscape architectural design to the San
                     Francisco Bay Area. The company focuses on connecting people
                     to nature through artful, practical and sustainable design.
-                  </p>
-                  <p>
+                  </DoubleP>
+                  <DoubleP>
                     Sustainability calls for using plants suited for California,
                     irrigating efficiently, reducing stormwater runoff, and
                     respecting the site. California's natural resources are a
                     blessing, and we believe in using them responsibly.
-                  </p>
-                  <p>
+                  </DoubleP>
+                  <DoubleP>
                     Taking care of the environment and meeting the needs of
                     people and their budget is a creative challenge. By bringing
                     in the beauty of our surroundings, dynamic spaces full of
                     life can be found by family and creature alike.
-                  </p>
-                  <p>Spaces that we can call Home.</p>
+                  </DoubleP>
+                  <DoubleP>Spaces that we can call Home.</DoubleP>
                 </Grid>
                 <Grid
                   item
@@ -156,14 +152,14 @@ const AboutPage = () => {
                       </div>
                     </Grid>
                     <Grid item xs={8}>
-                      <p>
+                      <DoubleP>
                         A career in landscaping began on a cul-de-sac in Almaden
                         Valley. Jake's parents and neighbors gave him summer
                         jobs taking care of their gardens. Plants, even pulling
                         weeds, always seemed to give Jake a certain calmness.
-                      </p>
+                      </DoubleP>
 
-                      <p>
+                      <DoubleP>
                         Since then, Jake has graduated with a landscape
                         architecture degree from Cal Poly, SLO, got his license,
                         and worked on parks, trail, and residential projects at
@@ -171,12 +167,12 @@ const AboutPage = () => {
                         also helped build gardens and worked as a fine gardener,
                         learning valuable skills from properly swinging a pick
                         to creating habitat for the Monarch butterfly.
-                      </p>
-                      <p>
+                      </DoubleP>
+                      <DoubleP>
                         Jake is grateful for these experiences and all the
                         people he crossed paths with. They showed him the beauty
                         of God's creation and the peace of knowing Jesus Christ
-                      </p>
+                      </DoubleP>
                     </Grid>
                   </Grid>
                 </Grid>

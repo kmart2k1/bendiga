@@ -22,25 +22,27 @@ const useStyles = createUseStyles((theme) => ({
     backgroundColor: '#c2ca86',
     alignItems: 'center',
     height: '80px',
+    padding: '0 10%',
+    position: 'relative',
   },
   navItem: {
     fontFamily: 'Montserrat, sans-serif',
     color: 'white',
     fontStyle: 'italic',
-    fontSize: '28px',
+    fontSize: '24px',
     margin: '0 20px',
   },
   logo: {
     position: 'absolute',
-    height: '50px',
   },
   butterfly: {
     position: 'absolute',
-    top: '20px',
-    right: '20px',
+    top: '25px',
+    right: '10%',
   },
   link: {
     textDecoration: 'none',
+    fontSize: '24px',
     color: 'white',
   },
 }))
@@ -49,10 +51,10 @@ const SecondaryHeader = ({}) => {
   const classes = useStyles()
   return (
     <>
-      <div className={classes.logo}>
-        <img src={logo} style={{ height: '80px' }} />
-      </div>
       <div className={classes.navContainer}>
+        <div className={classes.logo}>
+          <img src={logo} style={{ height: '80px' }} />
+        </div>
         <div className={classes.navItem} style={{ marginLeft: '100px' }}>
           <a href="/" className={classes.link}>
             home
@@ -68,12 +70,16 @@ const SecondaryHeader = ({}) => {
             process
           </a>
         </div>
-        <div className={classes.navItem}>work</div>
+        <div className={classes.navItem}>
+          <a href="work" className={classes.link}>
+            work
+          </a>
+        </div>
         <div className={classes.navItem}>contact</div>
       </div>
       <div className={classes.butterfly}>
         <a href="reading">
-          <img src={butterfly} style={{ height: '40px' }} />
+          <img src={butterfly} style={{ height: '30px' }} />
         </a>
       </div>
     </>
