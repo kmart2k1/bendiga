@@ -9,8 +9,6 @@ import { DoubleP } from '../common/textComponents'
 
 const useStyles = createUseStyles((theme) => ({
   container: {
-    backgroundColor: 'rgba(194,202,134,.2)',
-    padding: '0 10%',
     fontFamily: 'Montserrat, sans-serif',
     color: '#666666',
   },
