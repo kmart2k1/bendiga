@@ -71,6 +71,7 @@ const WorkPage = () => {
               md={6}
               lg={4}
               style={{
+                overflow: 'hidden',
                 border: 'solid 4px #ffffff',
                 borderLeft: 'solid 2px #ffffff',
                 borderRight: 'solid 2px #ffffff',
