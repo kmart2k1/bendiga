@@ -43,7 +43,7 @@ const WorkPage = () => {
               md={6}
               lg={4}
               style={{
-                backgroundImage: `url(${sanMateoSrc})`,
+                overflow: 'hidden',
                 border: 'solid 4px #ffffff',
                 borderRight: 'solid 2px #ffffff',
                 display: 'flex',
@@ -52,16 +52,17 @@ const WorkPage = () => {
                 minHeight: '300px',
               }}
             >
+              <img src={sanMateoSrc} />
               <div
                 style={{
+                  position: 'absolute',
                   color: '#ffffff',
                   fontStyle: 'italic',
-                  fontSize: '18px',
-                  backgroundColor: 'rgba(0,0,0,.2)',
-                  padding: '2px 4px',
+                  fontSize: '24px',
+                  padding: '16px 24px',
                 }}
               >
-                San Mateo County Concept
+                san mateo county concept
               </div>
             </Grid>
             <Grid
@@ -70,7 +71,6 @@ const WorkPage = () => {
               md={6}
               lg={4}
               style={{
-                backgroundImage: `url(${stepsSrc})`,
                 border: 'solid 4px #ffffff',
                 borderLeft: 'solid 2px #ffffff',
                 borderRight: 'solid 2px #ffffff',
@@ -80,16 +80,17 @@ const WorkPage = () => {
                 minHeight: '300px',
               }}
             >
+              <img src={stepsSrc} style={{ objectFit: 'contain' }} />
               <div
                 style={{
+                  position: 'absolute',
                   color: '#ffffff',
                   fontStyle: 'italic',
-                  fontSize: '18px',
-                  backgroundColor: 'rgba(0,0,0,.2)',
-                  padding: '2px 4px',
+                  fontSize: '24px',
+                  padding: '16px 24px',
                 }}
               >
-                Stevens Creek
+                stevens creek
               </div>
             </Grid>
             <Grid
@@ -98,7 +99,7 @@ const WorkPage = () => {
               md={6}
               lg={4}
               style={{
-                backgroundImage: `url(${fishingSrc})`,
+                overflow: 'hidden',
                 border: 'solid 4px #ffffff',
                 borderLeft: 'solid 2px #ffffff',
                 display: 'flex',
@@ -107,16 +108,17 @@ const WorkPage = () => {
                 minHeight: '300px',
               }}
             >
+              <img src={fishingSrc} />
               <div
                 style={{
+                  position: 'absolute',
                   color: '#ffffff',
                   fontStyle: 'italic',
-                  fontSize: '18px',
-                  backgroundColor: 'rgba(0,0,0,.2)',
-                  padding: '2px 4px',
+                  fontSize: '24px',
+                  padding: '16px 24px',
                 }}
               >
-                Giant Fishing Pole
+                gigantic fishing pole
               </div>
             </Grid>
           </Grid>
