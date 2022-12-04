@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/about/logo.png'
+import logo from '../../assets/about/logo2.png'
 import butterfly from '../../assets/about/butterfly.png'
 import { createUseStyles, useTheme } from 'react-jss'
 
@@ -17,13 +17,19 @@ const useStyles = createUseStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
   },
+  topNavContainer: {
+    display: 'flex',
+    width: '100%',
+    maxWidth: '1400px',
+  },
   navContainer: {
     display: 'flex',
     backgroundColor: '#c2ca86',
     alignItems: 'center',
     height: '80px',
-    padding: '0 10%',
+
     position: 'relative',
+    width: '100%',
   },
   navItem: {
     fontFamily: 'Montserrat, sans-serif',
@@ -36,53 +42,61 @@ const useStyles = createUseStyles((theme) => ({
     position: 'absolute',
   },
   butterfly: {
-    position: 'absolute',
-    top: '25px',
-    right: '10%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingRight: '20px',
   },
   link: {
     textDecoration: 'none',
     fontSize: '24px',
     color: 'white',
   },
+  outerContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#c2ca86',
+  },
 }))
 
 const SecondaryHeader = ({}) => {
   const classes = useStyles()
   return (
-    <>
-      <div className={classes.navContainer}>
-        <div className={classes.logo}>
-          <img src={logo} style={{ height: '80px' }} />
+    <div className={classes.outerContainer}>
+      <div className={classes.topNavContainer}>
+        <div className={classes.navContainer}>
+          <div className={classes.logo}>
+            <img src={logo} style={{ height: '80px' }} />
+          </div>
+          <div className={classes.navItem} style={{ marginLeft: '100px' }}>
+            <a href="/" className={classes.link}>
+              home
+            </a>
+          </div>
+          <div className={classes.navItem}>
+            <a href="about" className={classes.link}>
+              about
+            </a>
+          </div>
+          <div className={classes.navItem}>
+            <a href="process" className={classes.link}>
+              process
+            </a>
+          </div>
+          <div className={classes.navItem}>
+            <a href="work" className={classes.link}>
+              work
+            </a>
+          </div>
+          <div className={classes.navItem}>contact</div>
         </div>
-        <div className={classes.navItem} style={{ marginLeft: '100px' }}>
-          <a href="/" className={classes.link}>
-            home
+        <div className={classes.butterfly}>
+          <a href="reading">
+            <img src={butterfly} style={{ height: '30px' }} />
           </a>
         </div>
-        <div className={classes.navItem}>
-          <a href="about" className={classes.link}>
-            about
-          </a>
-        </div>
-        <div className={classes.navItem}>
-          <a href="process" className={classes.link}>
-            process
-          </a>
-        </div>
-        <div className={classes.navItem}>
-          <a href="work" className={classes.link}>
-            work
-          </a>
-        </div>
-        <div className={classes.navItem}>contact</div>
       </div>
-      <div className={classes.butterfly}>
-        <a href="reading">
-          <img src={butterfly} style={{ height: '30px' }} />
-        </a>
-      </div>
-    </>
+    </div>
   )
 }
 
