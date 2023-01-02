@@ -6,6 +6,7 @@ import fishingSrc from '../../assets/work/fishing-pole.jpg'
 import stepsSrc from '../../assets/work/steps.jpg'
 import SecondaryHeader from '../header/secondaryHeader'
 import { DoubleP } from '../common/textComponents'
+import { Link } from 'react-router-dom'
 
 const useStyles = createUseStyles((theme) => ({
   container: {
@@ -50,6 +51,7 @@ const WorkPage = () => {
                 minHeight: '300px',
               }}
             >
+              <Link to="/work/details/san-mateo">
               <img src={sanMateoSrc} />
               <div
                 style={{
@@ -62,6 +64,7 @@ const WorkPage = () => {
               >
                 san mateo county concept
               </div>
+              </Link>
             </Grid>
             <Grid
               item
@@ -79,6 +82,7 @@ const WorkPage = () => {
                 minHeight: '300px',
               }}
             >
+              <Link to="/work/details/stevens-creek">
               <img src={stepsSrc} style={{ objectFit: 'contain' }} />
               <div
                 style={{
@@ -91,6 +95,7 @@ const WorkPage = () => {
               >
                 stevens creek
               </div>
+              </Link>
             </Grid>
             <Grid
               item
@@ -107,6 +112,7 @@ const WorkPage = () => {
                 minHeight: '300px',
               }}
             >
+              <Link to="/work/details/fishing">
               <img src={fishingSrc} />
               <div
                 style={{
@@ -119,6 +125,7 @@ const WorkPage = () => {
               >
                 gigantic fishing pole
               </div>
+              </Link>
             </Grid>
           </Grid>
         </div>

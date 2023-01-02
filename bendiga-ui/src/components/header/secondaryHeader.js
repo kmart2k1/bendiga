@@ -74,24 +74,24 @@ const SecondaryHeader = ({}) => {
             </a>
           </div>
           <div className={classes.navItem}>
-            <a href="about" className={classes.link}>
+            <a href="/about" className={classes.link}>
               about
             </a>
           </div>
           <div className={classes.navItem}>
-            <a href="process" className={classes.link}>
+            <a href="/process" className={classes.link}>
               process
             </a>
           </div>
           <div className={classes.navItem}>
-            <a href="work" className={classes.link}>
+            <a href="/work" className={classes.link}>
               work
             </a>
           </div>
           <div className={classes.navItem}>contact</div>
         </div>
         <div className={classes.butterfly}>
-          <a href="reading">
+          <a href="/reading">
             <img src={butterfly} style={{ height: '30px' }} />
           </a>
         </div>
