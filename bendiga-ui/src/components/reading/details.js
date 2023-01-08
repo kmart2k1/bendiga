@@ -1,26 +1,16 @@
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import Grid from '@mui/material/Grid'
-import jakeImg from '../../assets/about/jakephoto.jpg'
-import beeArt from '../../assets/bee-art.png'
-import classNames from 'classnames'
-import sideart from '../../assets/about/sideart.png'
 import topart from '../../assets/about/topart.png'
-import logo from '../../assets/about/logo.png'
-import monarch from '../../assets/reading/monarch.png'
+import bird1 from '../../assets/reading/bird1.png'
+import bird2 from '../../assets/reading/bird2.png'
+import bird3 from '../../assets/reading/bird3.png'
 import SecondaryHeader from '../header/secondaryHeader'
 
 const useStyles = createUseStyles((theme) => ({
   container: {
     fontFamily: 'Montserrat, sans-serif',
     color: '#666666',
-  },
-  topPart: {
-    backgroundImage: `url(${beeArt})`,
-    backgroundSize: '70%',
-    backgroundRepeat: 'no-repeat',
-    height: '200px',
-    backgroundPositionX: 'center',
   },
   link: {
     marginRight: '24px',
@@ -43,16 +33,6 @@ const useStyles = createUseStyles((theme) => ({
   },
   jakeText: {
     padding: '8px',
-  },
-  flowerText: {},
-  flowerImage: {
-    transform: 'translateX(74px)',
-    margin: '0 -16px 0 0',
-    height: 'auto',
-    width: '150px',
-    maxWidth: '250px',
-    float: 'right',
-    shapeOutside: `url(${sideart})`,
   },
   navContainer: {
     display: 'flex',
@@ -140,7 +120,10 @@ const ReadingDetailsPage = () => {
               </Grid>
             </Grid>
             <Grid item xs={4}>
-              <img src={monarch} className={classes.topPlant} />
+              <img src={bird1} className={classes.topPlant} />
+              <img src={bird2} className={classes.topPlant} />
+              <img src={bird3} className={classes.topPlant} />
+
             </Grid>
           </Grid>
           <Grid container></Grid>
