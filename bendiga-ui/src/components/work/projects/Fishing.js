@@ -1,7 +1,7 @@
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import { Grid } from '@mui/material'
-import fishing from '../../../assets/work/fishing-pole/fishingpole.jpg'
+import fishing from '../../../assets/work/fishing-pole/fishing-pole.jpg'
 
 const useStyles = createUseStyles((theme) => ({
   container: {
