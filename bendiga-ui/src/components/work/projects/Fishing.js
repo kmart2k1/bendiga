@@ -1,11 +1,7 @@
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import { Grid } from '@mui/material'
-import sm1 from '../../../assets/work/san-mateo/sm1.jpg'
-import sm2 from '../../../assets/work/san-mateo/sm2.jpg'
-import sm3 from '../../../assets/work/san-mateo/sm3.jpg'
-import sm4 from '../../../assets/work/san-mateo/sm4.jpg'
-import sm5 from '../../../assets/work/san-mateo/sm5.jpg'
+import fishing from '../../../assets/work/fishing-pole/fishingpole.jpg'
 
 const useStyles = createUseStyles((theme) => ({
   container: {
@@ -44,6 +40,10 @@ const useStyles = createUseStyles((theme) => ({
     fontWeight: 'bold',
     fontStyle: 'italic',
     marginBottom:'32px'
+  },
+  poem: {
+    fontSize:'14px',
+    fontStyle:'italic'
   }
 }))
 
@@ -53,16 +53,16 @@ const FishingPage = () => {
   return (
     <Grid container className={classes.paper}>
       <Grid item xs={8}>
-        <img src={sm1} className={classes.image}/>
-        <img src={sm2} className={classes.image}/>
-        <img src={sm3} className={classes.image}/>
-        <img src={sm4} className={classes.image}/>
-        <img src={sm5} className={classes.image}/>
+        <img src={fishing} className={classes.image}/>
       </Grid>
       <Grid item xs={4} className={classes.textColumn}>
-        <div className={classes.subheader}>san mateo county concept</div>
-        <div className={classes.architect}>architect: Derek Wee</div>
-        A restrained hand was required to preserve views while creating outdoor living space.&nbsp;&nbsp;Subtle color and textural changes create visual interest and contemporary aesthetic.&nbsp;Low water plants add rhythm and movement with sculptural succulents serving as focal points.
+        <div className={classes.subheader}>gigantic fishing pole</div>
+        <div className={classes.architect}>team: Friends</div>
+        <div className={classes.poem}>
+        A cold and foggy day<br/>
+        On the coast of Morro Bay,<br/>
+        We made a gigantic fishing pole<br/>
+        </div>
       </Grid>
     </Grid>
   )

@@ -6,6 +6,8 @@ import Footer from './components/footer'
 import HomePage from './components/home'
 import AboutPage from './components/about'
 import ProcessPage from './components/process'
+import ReadingPage from './components/reading'
+import ReadingDetailsPage from './components/reading/details'
 import WorkPage from './components/work'
 import WorkDetailsPage from './components/work/Details'
 import { createUseStyles, useTheme } from 'react-jss'
@@ -32,7 +34,8 @@ function App() {
           <Route path="process" element={<ProcessPage />}></Route>
           <Route path="work/details/:id" element={<WorkDetailsPage/>}></Route>
           <Route path="work" element={<WorkPage />}></Route>
-          <Route path="reading" element={<div>Reading</div>}></Route>
+          <Route path="reading" element={<ReadingPage/>}></Route>
+          <Route path="reading/details" element={<ReadingDetailsPage/>}></Route>
           <Route path="contact" element={<div>Contact</div>}></Route>
           
         </Routes>
