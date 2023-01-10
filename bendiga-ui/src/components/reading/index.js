@@ -9,6 +9,7 @@ import topart from '../../assets/about/topart.png'
 import logo from '../../assets/about/logo.png'
 import monarch from '../../assets/reading/monarch.png'
 import SecondaryHeader from '../header/secondaryHeader'
+import { Link } from 'react-router-dom'
 
 const useStyles = createUseStyles((theme) => ({
   container: {
@@ -107,7 +108,7 @@ const ReadingPage = () => {
                   className={classes.subheader}
                   style={{ marginTop: '36px', marginBottom: '20px' }}
                 >
-                  hummingbird
+                  <Link to='/reading/details' style={{color:'#c2ca86', textDecoration:'none'}}>hummingbird</Link>
                 </Grid>
                 <Grid item xs={12}>
                   Hummingbirds whiz through our yards, beating their tiny wings up to 80 times per second.&nbsp;&nbsp;To keep this up they need food from the garden and a nearby branch to rest on...                  
