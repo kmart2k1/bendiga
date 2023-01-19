@@ -49,7 +49,7 @@ const Header = () => {
                 </Link>
               </Grid>
               <Grid item>
-                <Link className={classes.link} to="/home">
+                <Link className={classes.link} to="/contact">
                   contact
                 </Link>
               </Grid>

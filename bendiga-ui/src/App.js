@@ -10,6 +10,7 @@ import ReadingPage from './components/reading'
 import ReadingDetailsPage from './components/reading/details'
 import WorkPage from './components/work'
 import WorkDetailsPage from './components/work/Details'
+import ContactPage from './components/contact'
 import { createUseStyles, useTheme } from 'react-jss'
 import mobile from 'is-mobile'
 const useStyles = createUseStyles((theme) => ({
@@ -36,7 +37,7 @@ function App() {
           <Route path="work" element={<WorkPage />}></Route>
           <Route path="reading" element={<ReadingPage/>}></Route>
           <Route path="reading/details" element={<ReadingDetailsPage/>}></Route>
-          <Route path="contact" element={<div>Contact</div>}></Route>
+          <Route path="contact" element={<ContactPage/>}></Route>
           
         </Routes>
       </div>

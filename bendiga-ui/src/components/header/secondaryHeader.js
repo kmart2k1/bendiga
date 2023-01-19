@@ -88,7 +88,11 @@ const SecondaryHeader = ({}) => {
               work
             </a>
           </div>
-          <div className={classes.navItem}>contact</div>
+          <div className={classes.navItem}>
+            
+          <a href="/contact" className={classes.link}>
+              contact
+            </a></div>
         </div>
         <div className={classes.butterfly}>
           <a href="/reading">
