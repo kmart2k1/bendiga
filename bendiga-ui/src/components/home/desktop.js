@@ -199,7 +199,7 @@ const HomePageDesktop = () => {
                         <Link className={classes.link} to='/reading'>reading</Link>
                     </div>
                     <div className={classes.linkContainer}>
-                        <Link className={classes.link} to='/home'>contact</Link>
+                        <Link className={classes.link} to='/contact'>contact</Link>
                     </div>
                 </div>
             </div>
