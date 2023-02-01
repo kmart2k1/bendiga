@@ -34,8 +34,6 @@ const useStyles = createUseStyles((theme) => ({
   navItem: {
     fontFamily: 'Montserrat, sans-serif',
     color: 'white',
-    fontStyle: 'italic',
-    fontSize: '24px',
     margin: '0 20px',
   },
   logo: {
@@ -45,11 +43,11 @@ const useStyles = createUseStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingRight: '20px',
+    paddingRight: '30px',
   },
   link: {
     textDecoration: 'none',
-    fontSize: '24px',
+    fontSize: '16px',
     color: 'white',
   },
   outerContainer: {
@@ -66,7 +64,7 @@ const SecondaryHeader = ({}) => {
       <div className={classes.topNavContainer}>
         <div className={classes.navContainer}>
           <div className={classes.logo}>
-            <img src={logo} style={{ height: '80px' }} />
+            
           </div>
           <div className={classes.navItem} style={{ marginLeft: '100px' }}>
             <a href="/" className={classes.link}>

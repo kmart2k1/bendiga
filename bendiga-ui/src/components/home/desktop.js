@@ -63,7 +63,7 @@ const useStyles = createUseStyles((theme) =>({
         fontStyle: 'italic',
     },
     logo: {
-        width: '120px',
+        width: '130px',
         position: 'absolute',
         top: '0px',
         left: '30px',
@@ -71,7 +71,7 @@ const useStyles = createUseStyles((theme) =>({
     },
     menuContainer: {
         position: 'absolute',
-        left: '130px',
+        left: '110px',
         top: '40px',
         display: 'flex',
         flexWrap: 'wrap',
@@ -98,7 +98,7 @@ const useStyles = createUseStyles((theme) =>({
         paddingLeft: '38px'
     },
     titleText: {
-        fontSize: '24px',
+        fontSize: '30px',
         letterSpacing: '.18em',
         color: '#c2ca86'
     },
@@ -115,7 +115,7 @@ const useStyles = createUseStyles((theme) =>({
             bottom: '120px'
         },
         menuContainer: {
-            left: '130px',
+            left: '110px',
             top: '44px',
         },
         titleContainer: {
@@ -124,7 +124,7 @@ const useStyles = createUseStyles((theme) =>({
             paddingLeft: '32px'
         },
         titleText: {
-            fontSize: '20px',
+            fontSize: '24px',
             letterSpacing: '.18em',
             color: '#c2ca86',
             whiteSpace: 'nowrap'
@@ -151,7 +151,7 @@ const useStyles = createUseStyles((theme) =>({
             paddingLeft: '26px'
         },
         titleText: {
-            fontSize: '16px',
+            fontSize: '20px',
             letterSpacing: '.18em',
             color: '#c2ca86'
         },
@@ -184,7 +184,7 @@ const HomePageDesktop = () => {
                 </div>
                 <div className={classes.menuContainer}>
                     <div className={classes.titleContainer}>
-                        <span className={classes.titleText}>GOOD STEWARD LANDSCAPE ARCHITECTURE</span>
+                        <span className={classes.titleText}>BENDIGA LANDSACPE ARCHITECTURE</span>
                     </div>
                     <div className={classes.linkContainer}>
                         <Link className={classes.link} to='/about'>about</Link>

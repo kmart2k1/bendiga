@@ -66,12 +66,11 @@ const useStyles = createUseStyles((theme) => ({
     margin: '0 20px',
   },
   paper: {
-    padding: '0 100px',
-    maxWidth: '1200px',
-    width: '100%',
     margin: '0 auto',
+    padding: '0 0 0 100px',
     backgroundColor: 'white',
     textAlign: 'left',
+    maxWidth: '1300px',
     minHeight: 'calc(100vh - 60px + 200px)',
   },
   logo: {
@@ -107,9 +106,9 @@ const AboutPage = () => {
                 <Grid
                   item
                   xs={8}
-                  style={{ fontStyle: 'italic', marginTop: '24px' }}
+                  style={{ fontStyle: 'italic', marginTop: '36px' }}
                 >
-                  The following phases outlines a project's general design
+                  The following phases outline a project's general design
                   path.&nbsp;&nbsp;Depending on project size and scope, certain
                   phases may be combined or omitted.
                 </Grid>
@@ -122,7 +121,7 @@ const AboutPage = () => {
                   item
                   xs={12}
                   className={classes.subheader}
-                  style={{ marginTop: '18px' }}
+                  style={{margin:'36px 0 20px 0'}}
                 >
                   concept design
                 </Grid>
@@ -135,7 +134,7 @@ const AboutPage = () => {
                     ideas.&nbsp;&nbsp;3-D renderings are also available.
                   </DoubleP>
                 </Grid>
-                <Grid item xs={12} className={classes.subheader}>
+                <Grid item xs={12} className={classes.subheader} style={{margin:'36px 0 20px 0'}}>
                   design development
                 </Grid>
                 <Grid item xs={12}>
@@ -147,7 +146,7 @@ const AboutPage = () => {
                     to the City Planning Department may be required.
                   </DoubleP>
                 </Grid>
-                <Grid item xs={12} className={classes.subheader}>
+                <Grid item xs={12} className={classes.subheader} style={{margin:'36px 0 20px 0'}}>
                   construction documents
                 </Grid>
                 <Grid item xs={12}>

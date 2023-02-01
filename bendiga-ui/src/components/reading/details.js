@@ -49,10 +49,10 @@ const useStyles = createUseStyles((theme) => ({
   },
   paper: {
     margin: '0 auto',
-    padding: '0 100px',
+    padding: '0 0 0 100px',
     backgroundColor: 'white',
     textAlign: 'left',
-    maxWidth: '1200px',
+    maxWidth: '1300px',
     minHeight: 'calc(100vh - 60px + 200px)',
   },
   logo: {

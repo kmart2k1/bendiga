@@ -70,10 +70,10 @@ const useStyles = createUseStyles((theme) => ({
   },
   paper: {
     margin: '0 auto',
-    padding: '0 100px',
+    padding: '0 0 0 100px',
     backgroundColor: 'white',
     textAlign: 'left',
-    maxWidth: '1200px',
+    maxWidth: '1300px',
     minHeight: 'calc(100vh - 60px + 200px)',
   },
   logo: {
@@ -115,27 +115,27 @@ const AboutPage = () => {
                   Francisco Bay Area.&nbsp;&nbsp;The company focuses on
                   connecting people to nature through artful, practical and
                   sustainable design.
-                  <DoubleP>
+                  <p>
                     Sustainability calls for using plants suited for California,
                     irrigating efficiently, reducing stormwater runoff, and
                     respecting the site.&nbsp;&nbsp;California's natural
                     resources are a blessing, and we believe in using them
                     responsibly.
-                  </DoubleP>
-                  <DoubleP>
+                  </p>
+                  <p>
                     Taking care of the environment and meeting the needs of
                     people and their budget is a creative
                     challenge.&nbsp;&nbsp;By bringing in the beauty of our
                     surroundings, dynamic spaces full of life can be found by
                     family and creature alike.
-                  </DoubleP>
-                  <DoubleP>Spaces that we can call Home. </DoubleP>
+                  </p>
+                  <p>Spaces that we can call Home. </p>
                 </Grid>
                 <Grid
                   item
                   xs={12}
                   className={classes.subheader}
-                  style={{ marginTop: '0px' }}
+                  style={{ margin: '12px 0' }}
                 >
                   jacob mar
                 </Grid>
@@ -153,30 +153,29 @@ const AboutPage = () => {
                       </div>
                     </Grid>
                     <Grid item xs={8}>
-                      <DoubleP>
+                      <p>
                         A career in landscaping began on a cul-de-sac in Almaden
                         Valley.&nbsp;&nbsp;Jake's parents and neighbors gave him
-                        summer jobs taking care of their gardens. Plants, even
+                        summer jobs taking care of their gardens.&nbsp;&nbsp;Plants, even
                         pulling weeds, always seemed to give Jake a certain
                         calmness.
-                      </DoubleP>
+                      </p>
 
-                      <DoubleP>
+                      <p>
                         Since then, Jake has graduated with a landscape
                         architecture degree from Cal Poly, SLO, got his license,
                         and worked on parks, trail, and residential projects at
-                        design firms around the bay for the past 16
-                        years.&nbsp;&nbsp;He also helped build gardens and
+                        design firms around the bay.&nbsp;&nbsp;He also helped build gardens and
                         worked as a fine gardener, learning valuable skills from
                         properly swinging a pick to creating habitat for the
                         Monarch butterfly.
-                      </DoubleP>
-                      <DoubleP>
+                      </p>
+                      <p>
                         Jake is grateful for these experiences and all the
                         people he crossed paths with.&nbsp;&nbsp;They showed him
                         the beauty of God's creation and the peace of knowing
-                        Jesus Christ
-                      </DoubleP>
+                        Jesus Christ.
+                      </p>
                     </Grid>
                   </Grid>
                 </Grid>

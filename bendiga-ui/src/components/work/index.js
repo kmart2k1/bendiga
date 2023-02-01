@@ -35,98 +35,41 @@ const WorkPage = () => {
       <SecondaryHeader />
       <div className={classes.container}>
         <div className={classes.paper}>
-          <Grid container style={{ minHeight: '300px' }}>
+          <Grid container style={{ minHeight: '300px' }} justifyContent='center'>
             <Grid
               item
               xs={12}
-              md={6}
-              lg={4}
               style={{
                 overflow: 'hidden',
                 border: 'solid 4px #ffffff',
                 borderRight: 'solid 2px #ffffff',
                 display: 'flex',
-                justifyContent: 'flex-end',
+                justifyContent: 'center',
                 alignItems: 'flex-end',
                 minHeight: '300px',
+                position:'relative'
               }}
             >
               <Link to="/work/details/san-mateo">
               <img src={sanMateoSrc} />
               <div
                 style={{
+                  display:'none',
                   position: 'absolute',
-                  color: '#ffffff',
+                  color: '#fff',
                   fontStyle: 'italic',
                   fontSize: '24px',
                   padding: '16px 24px',
+                  zIndex:'10000',
+                  top:'250px',
+                  right:'150px'
                 }}
               >
                 san mateo county concept
               </div>
               </Link>
             </Grid>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              lg={4}
-              style={{
-                overflow: 'hidden',
-                border: 'solid 4px #ffffff',
-                borderLeft: 'solid 2px #ffffff',
-                borderRight: 'solid 2px #ffffff',
-                display: 'flex',
-                justifyContent: 'flex-end',
-                alignItems: 'flex-end',
-                minHeight: '300px',
-              }}
-            >
-              <Link to="/work/details/stevens-creek">
-              <img src={stepsSrc} style={{ objectFit: 'contain' }} />
-              <div
-                style={{
-                  position: 'absolute',
-                  color: '#ffffff',
-                  fontStyle: 'italic',
-                  fontSize: '24px',
-                  padding: '16px 24px',
-                }}
-              >
-                stevens creek
-              </div>
-              </Link>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              lg={4}
-              style={{
-                overflow: 'hidden',
-                border: 'solid 4px #ffffff',
-                borderLeft: 'solid 2px #ffffff',
-                display: 'flex',
-                justifyContent: 'flex-end',
-                alignItems: 'flex-end',
-                minHeight: '300px',
-              }}
-            >
-              <Link to="/work/details/fishing">
-              <img src={fishingSrc} />
-              <div
-                style={{
-                  position: 'absolute',
-                  color: '#ffffff',
-                  fontStyle: 'italic',
-                  fontSize: '24px',
-                  padding: '16px 24px',
-                }}
-              >
-                gigantic fishing pole
-              </div>
-              </Link>
-            </Grid>
+            
           </Grid>
         </div>
       </div>
