@@ -60,7 +60,8 @@ const useStyles = createUseStyles((theme) => ({
     height: '50px',
   },
   topPlant: {
-    marginTop: '3px',
+    marginTop: '12px',
+    display:'block',
     textAlign: 'right',
     width: '400px',
   },
@@ -79,7 +80,7 @@ const ReadingDetailsPage = () => {
       <div className={classes.container}>
         <div className={classes.paper}>
           <Grid container>
-            <Grid item xs={8}>
+            <Grid item xs={8} style={{paddingRight:'12px'}}>
               <Grid container>
                 <Grid
                   item
@@ -90,8 +91,8 @@ const ReadingDetailsPage = () => {
                   hummingbird
                 </Grid>
                 <Grid item xs={12}>
-                    <p>
-                  Most birds that visit our back yards have it easy.&nbsp;&nbsp;Homeowners set up seed and suet feeds along with the occasional bird bath.&nbsp;&nbsp;Food and drink are just a flap and hop away.
+                    <p style={{marginTop:'0'}}>
+                  Most birds that visit our back yards have it easy.&nbsp;&nbsp;Homeowners set up seed and suet feeder along with the occasional bird bath.&nbsp;&nbsp;Food and drink are just a flap and hop away.
                     </p>
                     <p>
                 On the other hand(or feather), hummingbirds spend most of their day looking for food.&nbsp;&nbsp;Up, down, side to side, to and fro, hummingbirds exert lots of energy zipping from one flower to another in search for nectar.&nbsp;&nbsp;They like red flowers, a color that bees have trouble seeing.&nbsp;&nbsp;They prefer the tubular kind as well.
@@ -112,7 +113,7 @@ const ReadingDetailsPage = () => {
                 Hummingbirds have very weak feet and are rarely ever seen walking about.&nbsp;&nbsp;They are the only bird, though, that can fly backwards, and sometimes upside down!
                 </p>
                 <p>
-                A hummingbird's immune system depends on the pollen proteins found in flower nectar, so it cannot survive on the nectar feeds that we put out.
+                A hummingbird's immune system depends on the pollen proteins found in flower nectar, so it cannot survive on the nectar feeder that we put out.
                 </p>
                 <span style={{fontStyle:'italic'}}>Information pulled from: Las Pilitas Nursery and other</span>
 
@@ -120,9 +121,9 @@ const ReadingDetailsPage = () => {
               </Grid>
             </Grid>
             <Grid item xs={4}>
-              <img src={bird1} className={classes.topPlant} />
+              <img src={bird1} className={classes.topPlant} style={{marginTop:'15px'}} />
               <img src={bird2} className={classes.topPlant} />
-              <img src={bird3} className={classes.topPlant} />
+              <img src={bird3} className={classes.topPlant} style={{marginTop:'13px', marginBottom:'12px'}} />
 
             </Grid>
           </Grid>

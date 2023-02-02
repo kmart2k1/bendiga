@@ -17,6 +17,7 @@ const useStyles = createUseStyles((theme) => ({
     marginRight: '24px',
   },
   subheader: {
+    padding:'36px 0 8px 0',
     fontSize: '24px',
     color: '#c2ca86',
     fontWeight: 'bold',
@@ -27,23 +28,24 @@ const useStyles = createUseStyles((theme) => ({
     padding: '0',
     backgroundColor: 'white',
     textAlign: 'left',
-    maxWidth: '1200px',
+    maxWidth: '1400px',
     minHeight: 'calc(100vh - 60px + 200px)',
   },
   image: {
+    padding: '8px 8px 0 8px',
+    margin:'0',
     width:'100%',
-    height:'auto',
-    padding: '8px 0'
+    display:'block'
   },
   textColumn: {
-    padding: '8px 32px'
+    padding: '8px 64px 0 32px'
   },
   architect : {
     fontSize: '18px',
     color: '#c2ca86',
     fontWeight: 'bold',
     fontStyle: 'italic',
-    marginBottom:'32px'
+    marginBottom:'20px'
   }
 }))
 
@@ -51,20 +53,26 @@ const SanMateoPage = () => {
   const classes = useStyles()
 
   return (
-    <Grid container className={classes.paper}>
+    <>
+        <Grid container  className={classes.paper}>
       <Grid item xs={8}>
         <img src={sm1} className={classes.image}/>
-        <img src={sm2} className={classes.image}/>
-        <img src={sm3} className={classes.image}/>
-        <img src={sm4} className={classes.image}/>
-        <img src={sm5} className={classes.image}/>
+        
       </Grid>
       <Grid item xs={4} className={classes.textColumn}>
         <div className={classes.subheader}>san mateo county concept</div>
         <div className={classes.architect}>architect: Derek Wee</div>
-        A restrained hand was required to preserve views while creating outdoor living space.&nbsp;&nbsp;Subtle color and textural changes create visual interest and contemporary aesthetic.&nbsp;Low water plants add rhythm and movement with sculptural succulents serving as focal points.
+        A restrained hand was required to preserve views while creating outdoor living space.&nbsp;&nbsp;Subtle color and textural changes create visual interest and contemporary aesthetic.&nbsp;&nbsp;Low water plants add rhythm and movement with sculptural succulents serving as focal points.
+      </Grid>
+      <Grid item xs={8}>
+      <img src={sm2} className={classes.image}/>
+        <img src={sm3} className={classes.image}/>
+        <img src={sm4} className={classes.image}/>
+        <img src={sm5} className={classes.image}/>
       </Grid>
     </Grid>
+    </>
+   
   )
 }
 

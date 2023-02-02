@@ -115,7 +115,7 @@ const ReadingPage = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={4} sx={{mt:'36px'}}>
               <img src={monarch} className={classes.topPlant} />
             </Grid>
           </Grid>

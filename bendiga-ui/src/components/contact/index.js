@@ -3,7 +3,7 @@ import { createUseStyles, useTheme } from 'react-jss'
 import Grid from '@mui/material/Grid'
 import bg from '../../assets/contact/bg.png'
 import SecondaryHeader from '../header/secondaryHeader'
-
+import { DoubleP } from '../common/textComponents'
 const useStyles = createUseStyles((theme) => ({
   container: {
     fontFamily: 'Montserrat, sans-serif',
@@ -83,13 +83,13 @@ const ContactPage = () => {
             <Grid item xs={8}>
              
             </Grid>
-            <Grid item xs={4} style={{textAlign:'center', fontSize:'14px',color:'#000'}}>
-                <p>
+            <Grid item xs={4} style={{textAlign:'center', fontSize:'16px',color:'#666'}}>
+                <DoubleP style={{paddingTop:'84px'}}>
              bendiga
-             </p>
-             <p>ca licensed landscape architect 5699</p>
-             <p>phone: 408.209.5506</p>
-             <p>email: jakelarc@gmail.com</p>
+             </DoubleP>
+             <DoubleP>ca licensed landscape architect 5699</DoubleP>
+             <DoubleP>phone: 408.209.5506</DoubleP>
+             <DoubleP>email: jakelarc@gmail.com</DoubleP>
              <p style={{fontStyle:'italic'}}>web design by keith mar</p>
              
              
