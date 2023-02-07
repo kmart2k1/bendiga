@@ -13,6 +13,7 @@ import WorkDetailsPage from './components/work/Details'
 import ContactPage from './components/contact'
 import { createUseStyles, useTheme } from 'react-jss'
 import mobile from 'is-mobile'
+import MobilePage from './components/mobile'
 const useStyles = createUseStyles((theme) => ({
   container: {
     margin: '0 16px',
@@ -25,22 +26,26 @@ function App() {
 
   return (
     <div className="App">
+      {mobile() ? 
+      <MobilePage/> :
       <div
-        className={classes.container}
-        style={{ margin: mobile() ? '0 16px' : '0' }}
-      >
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="about" element={<AboutPage />}></Route>
-          <Route path="process" element={<ProcessPage />}></Route>
-          <Route path="work/details/:id" element={<WorkDetailsPage/>}></Route>
-          <Route path="work" element={<WorkPage />}></Route>
-          <Route path="reading" element={<ReadingPage/>}></Route>
-          <Route path="reading/details" element={<ReadingDetailsPage/>}></Route>
-          <Route path="contact" element={<ContactPage/>}></Route>
-          
-        </Routes>
-      </div>
+      className={classes.container}
+      style={{ margin: mobile() ? '0 16px' : '0' }}
+    >
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="about" element={<AboutPage />}></Route>
+        <Route path="process" element={<ProcessPage />}></Route>
+        <Route path="work/details/:id" element={<WorkDetailsPage/>}></Route>
+        <Route path="work" element={<WorkPage />}></Route>
+        <Route path="reading" element={<ReadingPage/>}></Route>
+        <Route path="reading/details" element={<ReadingDetailsPage/>}></Route>
+        <Route path="contact" element={<ContactPage/>}></Route>
+        
+      </Routes>
+    </div>
+    }
+      
     </div>
   )
 }

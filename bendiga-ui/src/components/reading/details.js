@@ -95,7 +95,7 @@ const ReadingDetailsPage = () => {
                   Most birds that visit our back yards have it easy.&nbsp;&nbsp;Homeowners set up seed and suet feeder along with the occasional bird bath.&nbsp;&nbsp;Food and drink are just a flap and hop away.
                     </p>
                     <p>
-                On the other hand(or feather), hummingbirds spend most of their day looking for food.&nbsp;&nbsp;Up, down, side to side, to and fro, hummingbirds exert lots of energy zipping from one flower to another in search for nectar.&nbsp;&nbsp;They like red flowers, a color that bees have trouble seeing.&nbsp;&nbsp;They prefer the tubular kind as well.
+                On the other hand (or feather), hummingbirds spend most of their day looking for food.&nbsp;&nbsp;Up, down, side to side, to and fro, hummingbirds exert lots of energy zipping from one flower to another in search for nectar.&nbsp;&nbsp;They like red flowers, a color that bees have trouble seeing.&nbsp;&nbsp;They prefer the tubular kind as well.
                 </p>
                 <p>
                 Hummingbirds have excellent memories and remember every flower they've visited.&nbsp;&nbsp;That's a lot of flowers because the hummingbird needs to consume more than its body weight.&nbsp;&nbsp;And a lot of pollination, thanks to their heads that rub against a flower's stamens and pistils, collecting and depositing pollen at each flowery stop.&nbsp;&nbsp;Though tiny (the average hummingbird weighs less than a nickel), this hard working bird plays a big role in the home garden and landscape at large.
