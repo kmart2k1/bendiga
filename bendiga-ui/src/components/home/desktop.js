@@ -184,7 +184,7 @@ const HomePageDesktop = () => {
                 </div>
                 <div className={classes.menuContainer}>
                     <div className={classes.titleContainer}>
-                        <span className={classes.titleText}>BENDIGA LANDSACPE ARCHITECTURE</span>
+                        <span className={classes.titleText}>BENDIGA LANDSCAPE ARCHITECTURE</span>
                     </div>
                     <div className={classes.linkContainer}>
                         <Link className={classes.link} to='/about'>about</Link>
