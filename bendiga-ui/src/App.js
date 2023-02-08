@@ -27,10 +27,11 @@ function App() {
   return (
     <div className="App">
       {mobile() ? 
-      <MobilePage/> :
+      <div><MobilePage/></div>
+       :
       <div
       className={classes.container}
-      style={{ margin: mobile() ? '0 16px' : '0' }}
+      
     >
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
