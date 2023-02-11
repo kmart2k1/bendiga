@@ -72,7 +72,7 @@ const useStyles = createUseStyles((theme) =>({
     menuContainer: {
         position: 'absolute',
         left: '110px',
-        top: '40px',
+        top: '34px',
         display: 'flex',
         flexWrap: 'wrap',
         width: '70%'
@@ -116,7 +116,7 @@ const useStyles = createUseStyles((theme) =>({
         },
         menuContainer: {
             left: '110px',
-            top: '44px',
+            top: '40px',
         },
         titleContainer: {
             width: '100%',
@@ -141,13 +141,13 @@ const useStyles = createUseStyles((theme) =>({
     },
     '@media (max-width: 1100px)': {
         menuContainer: {
-            left: '130px',
-            top: '54px',
+            left: '114px',
+            top: '44px',
         },
         titleContainer: {
             width: '100%',
             textAlign: 'left',
-            paddingBottom: '14px',
+            paddingBottom: '24px',
             paddingLeft: '26px'
         },
         titleText: {
@@ -184,7 +184,7 @@ const HomePageDesktop = () => {
                 </div>
                 <div className={classes.menuContainer}>
                     <div className={classes.titleContainer}>
-                        <span className={classes.titleText}>BENDIGA LANDSCAPE ARCHITECTURE</span>
+                        <span className={classes.titleText}>BENDIGA&nbsp;&nbsp;LANDSCAPE&nbsp;&nbsp;ARCHITECTURE</span>
                     </div>
                     <div className={classes.linkContainer}>
                         <Link className={classes.link} to='/about'>about</Link>

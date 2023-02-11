@@ -157,14 +157,14 @@ const AboutPage = () => {
                     may include grading and drainage, irrigation, lighting,
                     layout plans, and detailed sections.
                   </DoubleP>
-                  <DoubleP>
+                  <p>
                     Bendiga also offers bidding and construction administration
                     services to ensure the project is built according to plan.
-                  </DoubleP>
+                  </p>
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={4} style={{ textAlign: 'right', overflowX: 'clip' }}>
+            <Grid item xs={4} style={{ textAlign: 'center', overflowX: 'clip' }}>
               <img src={sideart} className={classes.topPlant} />
             </Grid>
           </Grid>

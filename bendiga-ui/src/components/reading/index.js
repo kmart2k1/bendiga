@@ -111,7 +111,7 @@ const ReadingPage = () => {
                   <Link to='/reading/details' style={{color:'#c2ca86', textDecoration:'none'}}>hummingbird</Link>
                 </Grid>
                 <Grid item xs={12}>
-                  Hummingbirds whiz through our yards, beating their tiny wings up to 80 times per second.&nbsp;&nbsp;To keep this up they need food from the garden and a nearby branch to rest on...                  
+                  Hummingbirds whiz through our yards, beating their tiny wings up to 80 times per second.&nbsp;&nbsp;To keep this up, they need food from the garden and a nearby branch to rest on...                  
                 </Grid>
               </Grid>
             </Grid>

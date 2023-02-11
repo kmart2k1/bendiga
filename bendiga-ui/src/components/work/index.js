@@ -35,10 +35,10 @@ const WorkPage = () => {
       <SecondaryHeader />
       <div className={classes.container}>
         <div className={classes.paper}>
-          <Grid container style={{ minHeight: '300px' }} justifyContent='center'>
+          <Grid container style={{ minHeight: '300px' }} justifyContent='flex-start'>
             <Grid
               item
-              xs={12}
+              xs={4}
               style={{
                 overflow: 'hidden',
                 border: 'solid 4px #ffffff',

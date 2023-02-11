@@ -38,7 +38,7 @@ const useStyles = createUseStyles((theme) => ({
     display:'block'
   },
   textColumn: {
-    padding: '8px 64px 0 32px'
+    padding: '8px 64px 0 64px'
   },
   architect : {
     fontSize: '18px',
