@@ -63,7 +63,7 @@ const useStyles = createUseStyles((theme) => ({
     marginTop: '12px',
     display:'block',
     textAlign: 'right',
-    width: '400px',
+    width: '100%',
   },
   topArtContainer: {
     display: 'flex',
@@ -120,11 +120,12 @@ const ReadingDetailsPage = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={4}>
-              <img src={bird1} className={classes.topPlant} style={{marginTop:'15px'}} />
+            <Grid item xs={4} style={{paddingLeft:'24px', paddingRight:'24px'}}>
+              <img src={bird1} className={classes.topPlant} style={{marginTop:'15px',}} />
               <img src={bird2} className={classes.topPlant} />
               <img src={bird3} className={classes.topPlant} style={{marginTop:'13px', marginBottom:'12px'}} />
 
+              
             </Grid>
           </Grid>
           <Grid container></Grid>
