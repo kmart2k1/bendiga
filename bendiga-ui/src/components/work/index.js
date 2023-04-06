@@ -35,7 +35,11 @@ const WorkPage = () => {
       <SecondaryHeader />
       <div className={classes.container}>
         <div className={classes.paper}>
-          <Grid container style={{ minHeight: '300px' }} justifyContent='flex-start'>
+          <Grid
+            container
+            style={{ minHeight: '300px', display: 'none' }}
+            justifyContent="flex-start"
+          >
             <Grid
               item
               xs={4}
@@ -47,29 +51,28 @@ const WorkPage = () => {
                 justifyContent: 'center',
                 alignItems: 'flex-end',
                 minHeight: '300px',
-                position:'relative'
+                position: 'relative',
               }}
             >
               <Link to="/work/details/san-mateo">
-              <img src={sanMateoSrc} />
-              <div
-                style={{
-                  display:'none',
-                  position: 'absolute',
-                  color: '#fff',
-                  fontStyle: 'italic',
-                  fontSize: '24px',
-                  padding: '16px 24px',
-                  zIndex:'10000',
-                  top:'250px',
-                  right:'150px'
-                }}
-              >
-                san mateo county concept
-              </div>
+                <img src={sanMateoSrc} />
+                <div
+                  style={{
+                    display: 'none',
+                    position: 'absolute',
+                    color: '#fff',
+                    fontStyle: 'italic',
+                    fontSize: '24px',
+                    padding: '16px 24px',
+                    zIndex: '10000',
+                    top: '250px',
+                    right: '150px',
+                  }}
+                >
+                  san mateo county concept
+                </div>
               </Link>
             </Grid>
-            
           </Grid>
         </div>
       </div>

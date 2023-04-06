@@ -61,7 +61,7 @@ const useStyles = createUseStyles((theme) => ({
   },
   topPlant: {
     marginTop: '12px',
-    display:'block',
+    display: 'block',
     textAlign: 'right',
     width: '100%',
   },
@@ -80,7 +80,7 @@ const ReadingDetailsPage = () => {
       <div className={classes.container}>
         <div className={classes.paper}>
           <Grid container>
-            <Grid item xs={8} style={{paddingRight:'12px'}}>
+            <Grid item xs={8} style={{ paddingRight: '12px' }}>
               <Grid container>
                 <Grid
                   item
@@ -91,41 +91,74 @@ const ReadingDetailsPage = () => {
                   hummingbird
                 </Grid>
                 <Grid item xs={12}>
-                    <p style={{marginTop:'0'}}>
-                  Most birds that visit our back yards have it easy.&nbsp;&nbsp;Homeowners set up seed and suet feeder along with the occasional bird bath.&nbsp;&nbsp;Food and drink are just a flap and hop away.
-                    </p>
-                    <p>
-                On the other hand (or feather), hummingbirds spend most of their day looking for food.&nbsp;&nbsp;Up, down, side to side, to and fro, hummingbirds exert lots of energy zipping from one flower to another in search for nectar.&nbsp;&nbsp;They like red flowers, a color that bees have trouble seeing.&nbsp;&nbsp;They prefer the tubular kind as well.
-                </p>
-                <p>
-                Hummingbirds have excellent memories and remember every flower they've visited.&nbsp;&nbsp;That's a lot of flowers because the hummingbird needs to consume more than its body weight.&nbsp;&nbsp;And a lot of pollination, thanks to their heads that rub against a flower's stamens and pistils, collecting and depositing pollen at each flowery stop.&nbsp;&nbsp;Though tiny (the average hummingbird weighs less than a nickel), this hard working bird plays a big role in the home garden and landscape at large.
-                </p>
-                <p>
-                Get on their flower memory map and try planting some of these hummingbird favorites:
-                </p>
-                <p>
-                Ribes (Currant), Mimulus (Sticky Monkey flower), Penstemon (Beard Tongue), Antirrhinum (Snapdragon), Salvia (Sage), Zauschneria (CA Fuschia)
-                </p>
-                <p>
-                Fun Facts:
-                </p>
-                <p>
-                Hummingbirds have very weak feet and are rarely ever seen walking about.&nbsp;&nbsp;They are the only bird, though, that can fly backwards, and sometimes upside down!
-                </p>
-                <p>
-                A hummingbird's immune system depends on the pollen proteins found in flower nectar, so it cannot survive on the nectar feeder that we put out.
-                </p>
-                <span style={{fontStyle:'italic'}}>Information pulled from: Las Pilitas Nursery and other</span>
-
+                  <p style={{ marginTop: '0' }}>
+                    Most birds that visit our back yards have it
+                    easy.&nbsp;&nbsp;Homeowners set up seed and suet feeders
+                    along with the occasional bird bath.&nbsp;&nbsp;Food and
+                    drink are just a flap and hop away.
+                  </p>
+                  <p>
+                    On the other hand (or feather), hummingbirds spend most of
+                    their day looking for food.&nbsp;&nbsp;Up, down, side to
+                    side, to and fro, hummingbirds exert lots of energy zipping
+                    from one flower to another in search for
+                    nectar.&nbsp;&nbsp;They like red flowers, a color that bees
+                    have trouble seeing.&nbsp;&nbsp;They prefer the tubular kind
+                    as well.
+                  </p>
+                  <p>
+                    Hummingbirds have excellent memories and remember every
+                    flower they've visited.&nbsp;&nbsp;That's a lot of flowers
+                    because the hummingbird needs to consume more than its body
+                    weight.&nbsp;&nbsp;And a lot of pollination, thanks to their
+                    heads that rub against a flower's stamens and pistils,
+                    collecting and depositing pollen at each flowery
+                    stop.&nbsp;&nbsp;Though tiny (the average hummingbird weighs
+                    less than a nickel), this hard working bird plays a big role
+                    in the home garden and landscape at large.
+                  </p>
+                  <p>
+                    Get on their flower memory map and try planting some of
+                    these hummingbird favorites:
+                  </p>
+                  <p>
+                    Ribes (Currant), Mimulus (Sticky Monkey flower), Penstemon
+                    (Beard Tongue), Antirrhinum (Snapdragon), Salvia (Sage),
+                    Zauschneria (CA Fuschia)
+                  </p>
+                  <p>Fun Facts:</p>
+                  <p>
+                    Hummingbirds have very weak feet and are rarely ever seen
+                    walking about.&nbsp;&nbsp;They are the only bird, though,
+                    that can fly backwards, and sometimes upside down!
+                  </p>
+                  <p>
+                    A hummingbird's immune system depends on the pollen proteins
+                    found in flower nectar, so it cannot survive on the nectar
+                    feeders that we put out.
+                  </p>
+                  <span style={{ fontStyle: 'italic' }}>
+                    Information pulled from: Las Pilitas Nursery and other
+                  </span>
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={4} style={{paddingLeft:'24px', paddingRight:'24px'}}>
-              <img src={bird1} className={classes.topPlant} style={{marginTop:'15px',}} />
+            <Grid
+              item
+              xs={4}
+              style={{ paddingLeft: '24px', paddingRight: '24px' }}
+            >
+              <img
+                src={bird1}
+                className={classes.topPlant}
+                style={{ marginTop: '15px' }}
+              />
               <img src={bird2} className={classes.topPlant} />
-              <img src={bird3} className={classes.topPlant} style={{marginTop:'13px', marginBottom:'12px'}} />
-
-              
+              <img
+                src={bird3}
+                className={classes.topPlant}
+                style={{ marginTop: '13px', marginBottom: '12px' }}
+              />
             </Grid>
           </Grid>
           <Grid container></Grid>
