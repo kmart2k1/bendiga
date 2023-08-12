@@ -10,6 +10,7 @@ import { Routes, Route, Link, useParams } from 'react-router-dom'
 import SanMateo from './projects/SanMateo'
 import Fishing from './projects/Fishing'
 import StevensCreek from './projects/StevensCreek'
+import SanDiego from './projects/SanDiego'
 const useStyles = createUseStyles((theme) => ({
   container: {
     fontFamily: 'Montserrat, sans-serif',
@@ -36,6 +37,8 @@ const renderSwitch = (param) => {
         return <StevensCreek/>
       case 'fishing':
         return <Fishing/>
+      case 'san-diego':
+        return <SanDiego/>
       default:
         return <div>nothing</div>;
     }

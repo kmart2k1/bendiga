@@ -4,6 +4,7 @@ import { Grid } from '@mui/material'
 import sc1 from '../../../assets/work/stevens-creek/sc1.jpg'
 import sc2 from '../../../assets/work/stevens-creek/sc2.jpg'
 import sc3 from '../../../assets/work/stevens-creek/sc3.jpg'
+import sc4 from '../../../assets/work/stevens-creek/sc4.jpg'
 const useStyles = createUseStyles((theme) => ({
   container: {
     fontFamily: 'Montserrat, sans-serif',
@@ -88,6 +89,7 @@ const StevensCreekPage = () => {
             
             
             </Grid>
+            <Grid item xs={12}><img src={sc4} className={classes.image}/></Grid>
         </Grid>
         
         
@@ -96,8 +98,9 @@ const StevensCreekPage = () => {
       </Grid>
       <Grid item xs={4} className={classes.textColumn}>
         <div className={classes.subheader}>stevens creek</div>
-        <div className={classes.architect}>architect: Derek Wee, contractor: Earthscapes</div>
-        Stone retaining walls and steps were carefully crafter to blend in with the existing oak woodland.&nbsp;&nbsp;Permeable 'Granitecrete' paving provided drainage near the oaks.&nbsp;&nbsp;There are also raised vegetable beds and a studio shed to house legos.
+        <div className={classes.architect}>architect: Derek Wee<br/>
+        contractor: Earthcare Landscaping</div>
+        Stone retaining walls and steps were carefully crafted to blend in with the existing landscape.&nbsp;&nbsp;There are also raised vegetable beds and a studio shed to house legos.
       </Grid>
     </Grid>
   )

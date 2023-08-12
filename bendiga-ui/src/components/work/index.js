@@ -1,9 +1,10 @@
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import Grid from '@mui/material/Grid'
-import sanMateoSrc from '../../assets/work/san-mateo.jpg'
-import fishingSrc from '../../assets/work/fishing-pole.jpg'
-import stepsSrc from '../../assets/work/steps.jpg'
+import sanMateoSrc from '../../assets/work/san-mateo/preview.jpg'
+import fishingSrc from '../../assets/work/fishing-pole/preview.jpg'
+import stevensCreekSrc from '../../assets/work/stevens-creek/preview.jpg'
+import sanDiegoSrc from '../../assets/work/san-diego/preview.jpg'
 import SecondaryHeader from '../header/secondaryHeader'
 import { DoubleP } from '../common/textComponents'
 import { Link } from 'react-router-dom'
@@ -17,7 +18,9 @@ const useStyles = createUseStyles((theme) => ({
   link: {
     marginRight: '24px',
   },
-
+image: {
+  width:'100%',
+},
   paper: {
     margin: '0 auto',
     padding: '0',
@@ -37,9 +40,44 @@ const WorkPage = () => {
         <div className={classes.paper}>
           <Grid
             container
-            style={{ minHeight: '300px', display: 'none' }}
+            style={{ minHeight: '300px',  }}
             justifyContent="flex-start"
           >
+            <Grid
+              item
+              xs={4}
+              style={{
+                border: 'solid 4px #ffffff',
+                borderRight: 'solid 2px #ffffff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'flex-end',
+                position: 'relative',
+              }}
+            >
+              <Link to="/work/details/san-mateo">
+                <img src={sanMateoSrc}  className={classes.image}/>
+              
+              </Link>
+            </Grid>
+            <Grid
+              item
+              xs={4}
+              style={{
+                overflow: 'hidden',
+                border: 'solid 4px #ffffff',
+                borderRight: 'solid 2px #ffffff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'flex-end',
+                position: 'relative',
+              }}
+            >
+              <Link to="/work/details/stevens-creek"  >
+                <img src={stevensCreekSrc} className={classes.image}/>
+                
+              </Link>
+            </Grid>
             <Grid
               item
               xs={4}
@@ -54,23 +92,28 @@ const WorkPage = () => {
                 position: 'relative',
               }}
             >
-              <Link to="/work/details/san-mateo">
-                <img src={sanMateoSrc} />
-                <div
-                  style={{
-                    display: 'none',
-                    position: 'absolute',
-                    color: '#fff',
-                    fontStyle: 'italic',
-                    fontSize: '24px',
-                    padding: '16px 24px',
-                    zIndex: '10000',
-                    top: '250px',
-                    right: '150px',
-                  }}
-                >
-                  san mateo county concept
-                </div>
+              <Link to="/work/details/fishing">
+                <img src={fishingSrc}  className={classes.image}/>
+                
+              </Link>
+            </Grid>
+
+
+            <Grid
+              item
+              xs={4}
+              style={{
+                border: 'solid 4px #ffffff',
+                borderRight: 'solid 2px #ffffff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'flex-end',
+                position: 'relative',
+              }}
+            >
+              <Link to="/work/details/san-diego">
+                <img src={sanDiegoSrc}  className={classes.image}/>
+                
               </Link>
             </Grid>
           </Grid>

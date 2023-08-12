@@ -1,7 +1,7 @@
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import { Grid } from '@mui/material'
-import fishing from '../../../assets/work/fishing-pole/fishing-pole.jpg'
+import fishing from '../../../assets/work/fishing-pole/main.jpg'
 
 const useStyles = createUseStyles((theme) => ({
   container: {
@@ -57,7 +57,7 @@ const FishingPage = () => {
       </Grid>
       <Grid item xs={4} className={classes.textColumn}>
         <div className={classes.subheader}>gigantic fishing pole</div>
-        <div className={classes.architect}>team: Friends</div>
+        <div className={classes.architect}>team: tyler, melissa, jake</div>
         <div className={classes.poem}>
         A cold and foggy day<br/>
         On the coast of Morro Bay,<br/>

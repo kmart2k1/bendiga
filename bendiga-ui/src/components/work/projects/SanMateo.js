@@ -6,7 +6,7 @@ import sm2 from '../../../assets/work/san-mateo/sm2.jpg'
 import sm3 from '../../../assets/work/san-mateo/sm3.jpg'
 import sm4 from '../../../assets/work/san-mateo/sm4.jpg'
 import sm5 from '../../../assets/work/san-mateo/sm5.jpg'
-
+import sm6 from '../../../assets/work/san-mateo/sm6.jpg'
 const useStyles = createUseStyles((theme) => ({
   container: {
     fontFamily: 'Montserrat, sans-serif',
@@ -65,10 +65,11 @@ const SanMateoPage = () => {
         A restrained hand was required to preserve views while creating outdoor living space.&nbsp;&nbsp;Subtle color and textural changes create visual interest and contemporary aesthetic.&nbsp;&nbsp;Low water plants add rhythm and movement with sculptural succulents serving as focal points.
       </Grid>
       <Grid item xs={8}>
-      <img src={sm2} className={classes.image}/>
+        <img src={sm2} className={classes.image}/>
         <img src={sm3} className={classes.image}/>
         <img src={sm4} className={classes.image}/>
         <img src={sm5} className={classes.image}/>
+        <img src={sm6} className={classes.image}/>
       </Grid>
     </Grid>
     </>

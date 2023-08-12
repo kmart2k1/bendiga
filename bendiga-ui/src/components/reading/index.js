@@ -83,7 +83,7 @@ const useStyles = createUseStyles((theme) => ({
   topPlant: {
     marginTop: '3px',
     textAlign: 'right',
-    width: '400px',
+    width: '300px',
   },
   topArtContainer: {
     display: 'flex',
@@ -112,6 +112,30 @@ const ReadingPage = () => {
                 </Grid>
                 <Grid item xs={12}>
                   Hummingbirds whiz through our yards, beating their tiny wings up to 80 times per second.&nbsp;&nbsp;To keep this up, they need food from the garden and a nearby branch to rest on...                  
+                </Grid>
+
+                <Grid
+                  item
+                  xs={12}
+                  className={classes.subheader}
+                  style={{ marginTop: '36px', marginBottom: '20px' }}
+                >
+                  <span style={{color:'#c2ca86', textDecoration:'none'}}>monarch butterfly</span>
+                </Grid>
+                <Grid item xs={12}>
+                  Once the Monarch Butterfly emerges from its chrysalis, it pumps hemolymph fluid from its enlarged abdomen into its small wings, making them bigger, and ready for takeoff.&nbsp;&nbsp;It's a long journey (coming soon)                 
+                </Grid>
+
+                <Grid
+                  item
+                  xs={12}
+                  className={classes.subheader}
+                  style={{ marginTop: '36px', marginBottom: '20px' }}
+                >
+                  <span style={{color:'#c2ca86', textDecoration:'none'}}>soil microbe</span>
+                </Grid>
+                <Grid item xs={12}>
+                  New York City is consdered to be one of the most densely populated cities in the United States. Comparitively, a teaspoon of dirt from your back yard contains thousands, perhaps millions of living organisms (coming soon)
                 </Grid>
               </Grid>
             </Grid>
