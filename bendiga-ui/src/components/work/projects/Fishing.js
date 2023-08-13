@@ -13,6 +13,7 @@ const useStyles = createUseStyles((theme) => ({
     marginRight: '24px',
   },
   subheader: {
+    padding:'36px 0 8px 0',
     fontSize: '24px',
     color: '#c2ca86',
     fontWeight: 'bold',
@@ -32,14 +33,14 @@ const useStyles = createUseStyles((theme) => ({
     padding: '8px 0'
   },
   textColumn: {
-    padding: '8px 32px'
+    padding: '8px 64px 0 64px'
   },
   architect : {
     fontSize: '18px',
     color: '#c2ca86',
     fontWeight: 'bold',
     fontStyle: 'italic',
-    marginBottom:'32px'
+    marginBottom:'20px'
   },
   poem: {
     fontSize:'14px',

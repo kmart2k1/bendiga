@@ -1,10 +1,10 @@
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import Grid from '@mui/material/Grid'
-import sanMateoSrc from '../../assets/work/san-mateo/preview.jpg'
-import fishingSrc from '../../assets/work/fishing-pole/preview.jpg'
-import stevensCreekSrc from '../../assets/work/stevens-creek/preview.jpg'
-import sanDiegoSrc from '../../assets/work/san-diego/preview.jpg'
+import sanMateoSrc from '../../assets/work/san-mateo/t1.jpg'
+import fishingSrc from '../../assets/work/fishing-pole/t3.jpg'
+import stevensCreekSrc from '../../assets/work/stevens-creek/t2.jpg'
+import sanDiegoSrc from '../../assets/work/san-diego/t4.jpg'
 import SecondaryHeader from '../header/secondaryHeader'
 import { DoubleP } from '../common/textComponents'
 import { Link } from 'react-router-dom'
@@ -51,7 +51,7 @@ const WorkPage = () => {
                 borderRight: 'solid 2px #ffffff',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'flex-end',
+                alignItems: 'flex-start',
                 position: 'relative',
               }}
             >
@@ -69,7 +69,7 @@ const WorkPage = () => {
                 borderRight: 'solid 2px #ffffff',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'flex-end',
+                alignItems: 'flex-start',
                 position: 'relative',
               }}
             >
@@ -87,14 +87,13 @@ const WorkPage = () => {
                 borderRight: 'solid 2px #ffffff',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'flex-end',
+                alignItems: 'flex-start',
                 minHeight: '300px',
                 position: 'relative',
               }}
             >
               <Link to="/work/details/fishing">
                 <img src={fishingSrc}  className={classes.image}/>
-                
               </Link>
             </Grid>
 
@@ -107,7 +106,7 @@ const WorkPage = () => {
                 borderRight: 'solid 2px #ffffff',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'flex-end',
+                alignItems: 'flex-start',
                 position: 'relative',
               }}
             >

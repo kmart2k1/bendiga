@@ -1,10 +1,7 @@
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import { Grid } from '@mui/material'
-import sc1 from '../../../assets/work/stevens-creek/sc1.jpg'
-import sc2 from '../../../assets/work/stevens-creek/sc2.jpg'
-import sc3 from '../../../assets/work/stevens-creek/sc3.jpg'
-import sc4 from '../../../assets/work/stevens-creek/sc4.jpg'
+import allSrc from '../../../assets/work/stevens-creek/all.jpg'
 const useStyles = createUseStyles((theme) => ({
   container: {
     fontFamily: 'Montserrat, sans-serif',
@@ -15,6 +12,7 @@ const useStyles = createUseStyles((theme) => ({
     marginRight: '24px',
   },
   subheader: {
+    padding:'36px 0 8px 0',
     fontSize: '24px',
     color: '#c2ca86',
     fontWeight: 'bold',
@@ -44,22 +42,11 @@ const useStyles = createUseStyles((theme) => ({
     padding: '8px 32px'
   },
   architect : {
-    fontSize: '14px',
+    fontSize: '18px',
     color: '#c2ca86',
     fontWeight: 'bold',
     fontStyle: 'italic',
-    marginBottom:'32px'
-  },
-  lowerleft: {
-    backgroundImage: `url(${sc2})`,
-    width:'100%',
-    height:'600px',
-  },
-  lowerright: {
-    backgroundImage: `url(${sc3})`,
-    width:'100%',
-    height:'600px',
-
+    marginBottom:'20px'
   }
 
 }))
@@ -70,28 +57,7 @@ const StevensCreekPage = () => {
   return (
     <Grid container className={classes.paper}>
       <Grid item xs={8}>
-        <Grid container>
-            <Grid item xs={12}><img src={sc1} className={classes.image}/></Grid>
-            <Grid item xs={12}>
-                <Grid container spacing={0}>
-                    <Grid item xs={4} style={{paddingRight:'16px'}}>
-                        <div className={classes.lowerleft}>
-
-                        </div>
-                    </Grid>
-                    <Grid item xs={8} >
-                    <div className={classes.lowerright}>
-
-</div>
-                    </Grid>
-                </Grid>
-            
-            
-            
-            </Grid>
-            <Grid item xs={12}><img src={sc4} className={classes.image}/></Grid>
-        </Grid>
-        
+        <img src={allSrc} style={{width:'100%'}} className={classes.image}/>
         
         
         

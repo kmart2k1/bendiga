@@ -13,6 +13,7 @@ const useStyles = createUseStyles((theme) => ({
     marginRight: '24px',
   },
   subheader: {
+    padding:'36px 0 8px 0',
     fontSize: '24px',
     color: '#c2ca86',
     fontWeight: 'bold',
@@ -39,7 +40,7 @@ const useStyles = createUseStyles((theme) => ({
     color: '#c2ca86',
     fontWeight: 'bold',
     fontStyle: 'italic',
-    marginBottom:'32px'
+    marginBottom:'20px'
   },
   poem: {
   }
@@ -58,7 +59,7 @@ const SanDiegoPage = () => {
         <div className={classes.subheader}>san diego concept</div>
         <div className={classes.architect}>construction date: fall 2023</div>
         <div className={classes.poem}>
-        Swaths grasses and colorful succulents welcome visitors while low retaining walls provide structure and order to the front entrance. The pet dog dutifully patrols the front yard, but is easily distracted by a variety of garden scents, plant life, and gurgling water.
+        Swaths of grasses and colorful succulents welcome visitors while low retaining walls provide structure and order to the front entrance. The pet dog dutifully patrols the front yard, but is easily distracted by a variety of garden scents, plant life, and gurgling water.
         </div>
       </Grid>
     </Grid>

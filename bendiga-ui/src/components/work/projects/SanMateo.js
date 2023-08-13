@@ -64,11 +64,10 @@ const SanMateoPage = () => {
         <div className={classes.architect}>architect: Derek Wee</div>
         A restrained hand was required to preserve views while creating outdoor living space.&nbsp;&nbsp;Subtle color and textural changes create visual interest and contemporary aesthetic.&nbsp;&nbsp;Low water plants add rhythm and movement with sculptural succulents serving as focal points.
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={8} style={{paddingBottom:'15%'}}>
         <img src={sm2} className={classes.image}/>
         <img src={sm3} className={classes.image}/>
         <img src={sm4} className={classes.image}/>
-        <img src={sm5} className={classes.image}/>
         <img src={sm6} className={classes.image}/>
       </Grid>
     </Grid>

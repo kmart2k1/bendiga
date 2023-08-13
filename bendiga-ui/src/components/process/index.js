@@ -158,7 +158,7 @@ const AboutPage = () => {
                     layout plans, and detailed sections.
                   </DoubleP>
                   <p>
-                    Bendiga also offers bidding and
+                    Bendiga also offers bidding and construction observation
                     services to ensure the project is built according to plan.
                   </p>
                 </Grid>
